@@ -59,6 +59,8 @@
     <Compile Include="Assets\Scripts\KnifeMovement.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Scripts\StabKnife.cs" />
+    <Compile Include="Assets\Scripts\Constants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
