@@ -1,26 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class InputManager : MonoBehaviour
-{   
-    public bool ActionButtonIsPressed { get; private set; } = false;
+{
+    public Action ActionButtonPressedEvent;
 
     private void Update()
     {
-        ActionButtonIsPressed = UpdateActionButtonStatus();
+        UpdateActionButtonStatus();
     }
 
-    private bool UpdateActionButtonStatus()
+    private void UpdateActionButtonStatus()
     {
         if (Input.touchCount < 1)
-            return false;
+            return;
 
         Touch touch = Input.GetTouch(0);
 
         if (touch.phase == TouchPhase.Began)
-            return true;
-
-        return false;
+            ActionButtonPressedEvent();
     }
 }
