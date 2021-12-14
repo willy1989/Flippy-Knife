@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Notifications.iOS", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{6BDCD737-4101-7830-8A16-7BC25BB68F8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinemachine", "Cinemachine.csproj", "{581A6657-3C25-2DB6-D0C8-27249F1D79D8}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline.Editor", "Unity.Timeline.Editor.csproj", "{72F2251B-25AE-019B-18E8-6BD7C2C158A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.TestRunner", "UnityEditor.TestRunner.csproj", "{2851218F-88D8-617B-27B1-204EB52E961B}"
@@ -34,6 +36,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Rider.Editor", "Unity.Rider.Editor.csproj", "{43840DF8-4A69-26B8-20B9-B4614A628A6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Notifications", "Unity.Notifications.csproj", "{40DB5A27-878B-F379-932E-2D228D8A6096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.unity.cinemachine.editor", "com.unity.cinemachine.editor.csproj", "{49FFD84C-E2BE-4359-78B2-F0CBEC1D10CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,10 @@ Global
 		{6BDCD737-4101-7830-8A16-7BC25BB68F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BDCD737-4101-7830-8A16-7BC25BB68F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BDCD737-4101-7830-8A16-7BC25BB68F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581A6657-3C25-2DB6-D0C8-27249F1D79D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581A6657-3C25-2DB6-D0C8-27249F1D79D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581A6657-3C25-2DB6-D0C8-27249F1D79D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581A6657-3C25-2DB6-D0C8-27249F1D79D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{72F2251B-25AE-019B-18E8-6BD7C2C158A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{72F2251B-25AE-019B-18E8-6BD7C2C158A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72F2251B-25AE-019B-18E8-6BD7C2C158A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -109,6 +117,10 @@ Global
 		{40DB5A27-878B-F379-932E-2D228D8A6096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40DB5A27-878B-F379-932E-2D228D8A6096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40DB5A27-878B-F379-932E-2D228D8A6096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FFD84C-E2BE-4359-78B2-F0CBEC1D10CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FFD84C-E2BE-4359-78B2-F0CBEC1D10CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FFD84C-E2BE-4359-78B2-F0CBEC1D10CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FFD84C-E2BE-4359-78B2-F0CBEC1D10CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

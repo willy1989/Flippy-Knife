@@ -11,7 +11,7 @@ public class KnifeMovement : MonoBehaviour
     private bool readyToMove = false;
 
     private Vector3 movementForceVector = new Vector3(200f, 400f, 0f);
-    private Vector3 rotateForceVector = new Vector3(0f, 0f, -350f);
+    private Vector3 rotateForceVector = new Vector3(0f, 0f, -200f);
 
     private void Awake()
     {
