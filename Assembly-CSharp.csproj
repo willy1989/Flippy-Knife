@@ -63,6 +63,9 @@
     <Compile Include="Assets\Scripts\Cuttable.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\KnifeDeath.cs" />
+    <Compile Include="Assets\Scripts\GamePhaseManager.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -625,9 +628,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{581A6657-3C25-2DB6-D0C8-27249F1D79D8}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{7584FD4E-7AEA-FBBF-C230-3855B7CD9734}</Project>
       <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{49FFD84C-E2BE-4359-78B2-F0CBEC1D10CB}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Notifications.csproj">
       <Project>{40DB5A27-878B-F379-932E-2D228D8A6096}</Project>
@@ -676,14 +687,6 @@
     <ProjectReference Include="Unity.Notifications.iOS.csproj">
       <Project>{53184C50-4240-696F-34E0-D10A522FFF72}</Project>
       <Name>Unity.Notifications.iOS</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{49FFD84C-E2BE-4359-78B2-F0CBEC1D10CB}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{581A6657-3C25-2DB6-D0C8-27249F1D79D8}</Project>
-      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
