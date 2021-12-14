@@ -56,11 +56,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\KnifeMovement.cs" />
+    <Compile Include="Assets\Scripts\Knife\KnifeMovement.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\Scripts\StabKnife.cs" />
+    <Compile Include="Assets\Scripts\Knife\StabKnife.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\Cuttable.cs" />
+    <Compile Include="Assets\Scripts\Knife\CutKnife.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
