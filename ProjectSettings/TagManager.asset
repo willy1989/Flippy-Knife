@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stabbable
   - Cuttable
+  - DeadlyToKnife
   layers:
   - Default
   - TransparentFX
