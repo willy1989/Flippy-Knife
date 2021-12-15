@@ -9,7 +9,7 @@ public class KnifeDeath : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(Constants.DeadlyToNife_Tag) == true)
+        if (other.CompareTag(Constants.DeadlyToKnife_Tag) == true)
             DeathEvent();
     }
 }

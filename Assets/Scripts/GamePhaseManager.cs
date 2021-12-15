@@ -7,18 +7,25 @@ public class GamePhaseManager : MonoBehaviour
 {
     [SerializeField] private UIManager uiManager;
 
-    [SerializeField] private Button restartButton;
-
-    [SerializeField] private Button enableMovementButton;
+    [SerializeField] private ScoreManager scoreManager;
 
     [SerializeField] private KnifeDeath knifeDeath;
 
     [SerializeField] private KnifeMovement knifeMovement;
 
+    [SerializeField] private Button gameOverRestartButton;
+
+    [SerializeField] private Button levelEndRestartButton;
+
+    [SerializeField] private Button enableMovementButton;
+
     private void Awake()
     {
-        restartButton.onClick.RemoveAllListeners();
-        restartButton.onClick.AddListener(ResetGame);
+        gameOverRestartButton.onClick.RemoveAllListeners();
+        gameOverRestartButton.onClick.AddListener(ResetGame);
+
+        levelEndRestartButton.onClick.RemoveAllListeners();
+        levelEndRestartButton.onClick.AddListener(ResetGame);
 
         enableMovementButton.onClick.RemoveAllListeners();
         enableMovementButton.onClick.AddListener(StartGame);
@@ -29,13 +36,17 @@ public class GamePhaseManager : MonoBehaviour
     private void Start()
     {
         knifeMovement.DisableMovement();
+        uiManager.UpdateTotalMoneyText();
     }
 
     public void ResetGame()
     {
         uiManager.ToggleStartUI(OnOff: true);
         uiManager.ToggleGameOverUI(OnOff: false);
+        uiManager.ToggleLevelEndUI(OnOff: false);
         knifeMovement.ResetToStartPosition();
+        scoreManager.ResetMoneyEarnedThisRound();
+        uiManager.UpdateTotalMoneyText();
     }
 
     public void StartGame()
@@ -46,7 +57,14 @@ public class GamePhaseManager : MonoBehaviour
 
     public void GameOver()
     {
+        uiManager.UpdateTotalMoneyText();
         uiManager.ToggleGameOverUI(OnOff: true);
         knifeMovement.DisableMovement();
+    }
+
+    public void ReachedLevelEnd()
+    {
+        uiManager.ToggleLevelEndUI(OnOff: true);
+        uiManager.UpdateBonusMoneyEarned();
     }
 }
