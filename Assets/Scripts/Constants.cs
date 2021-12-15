@@ -4,7 +4,12 @@ using UnityEngine;
 
 public static class Constants 
 {
+    // Tags
     public const string Stabbable_Tag = "Stabbable";
     public const string Cuttable_Tag = "Cuttable";
-    public const string DeadlyToNife_Tag = "DeadlyToKnife";
+    public const string DeadlyToKnife_Tag = "DeadlyToKnife";
+    public const string BonusBlock_Tag = "BonusBlock";
+
+    // Player prefs
+    public const string TotalMoney_PlayerPrefs = "TotalMoney";
 }
