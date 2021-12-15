@@ -13,7 +13,7 @@
     <meta-data android:name="unity.splash-mode" android:value="0" />
     <meta-data android:name="unity.splash-enable" android:value="True" />
     <meta-data android:name="notch.config" android:value="portrait|landscape" />
-    <meta-data android:name="unity.build-id" android:value="4f84a915-b502-448f-a742-1c2d1a312aab" />
+    <meta-data android:name="unity.build-id" android:value="58dd991b-0c25-4ebc-9b0d-8cfe9df4a7e7" />
     <receiver android:name="com.unity.androidnotifications.UnityNotificationManager" android:exported="true" />
     <receiver android:name="com.unity.androidnotifications.UnityNotificationRestartOnBootReceiver" android:enabled="false">
       <intent-filter>

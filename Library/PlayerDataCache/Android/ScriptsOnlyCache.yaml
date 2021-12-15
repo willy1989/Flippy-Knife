@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - InputManager
     - KnifeDeath
     - KnifeMovement
+    - LevelBuilder
     - ScoreManager
     - StabKnife
     - UIManager
@@ -51,8 +52,6 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -106,6 +105,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3852}
     - Class: 114
       Script: {instanceID: 3986}
+    - Class: 114
+      Script: {instanceID: 56380}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -211,7 +212,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 6c318d5e599dc3bfd2ca9988897165c8
+      Hash: d2ad459e2a0eda3dd49a7c0c958cef72
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GamePhaseManager
@@ -917,6 +918,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 4ccd0a53ece99aebc7346eae33edf2ad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelBuilder
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -61,13 +61,14 @@
     <Compile Include="Assets\Scripts\Knife\KnifeMovement.cs" />
     <Compile Include="Assets\Scripts\Knife\CutKnife.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Knife\BonusBlock.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\Knife\StabKnife.cs" />
     <Compile Include="Assets\Scripts\Cuttable.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
-    <Compile Include="Assets\Scripts\ScoreManager.cs" />
-    <Compile Include="Assets\Scripts\Knife\BonusBlock.cs" />
+    <Compile Include="Assets\Scripts\LevelBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
