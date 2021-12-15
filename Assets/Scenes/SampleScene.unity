@@ -2123,6 +2123,8 @@ MonoBehaviour:
   - {fileID: 5244202578456729133, guid: 07ad55f7d2cb55e42b370204fdcea68a, type: 3}
   - {fileID: 3205467234657855864, guid: a0087f05bcc2edf498ad257442532b3f, type: 3}
   - {fileID: 8309799004761514288, guid: 5f6e81580ae23234e8fce876c8abfbbf, type: 3}
+  - {fileID: 6141716001154356355, guid: a89d99a52ac7b024196d608bdb0150e7, type: 3}
+  - {fileID: 1483020797461694592, guid: 15d6db62b773db14890a0e052febaa64, type: 3}
   BonusBlocks: {fileID: 1508122497309324710, guid: 2a61bf0f070f03940a61c0cce7db07b1,
     type: 3}
 --- !u!4 &1804313637
