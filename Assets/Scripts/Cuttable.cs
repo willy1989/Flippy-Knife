@@ -24,7 +24,7 @@ public class Cuttable : MonoBehaviour
             rigidbody.isKinematic = false;
         }
 
-        halves[0].AddForce(Vector3.forward * 100f);
-        halves[1].AddForce(Vector3.back * 100f);
+        halves[0].AddForce(Vector3.forward * 200f);
+        halves[1].AddForce(Vector3.back * 200f);
     }
 }

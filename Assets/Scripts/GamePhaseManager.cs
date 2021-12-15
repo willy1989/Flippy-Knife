@@ -13,6 +13,10 @@ public class GamePhaseManager : MonoBehaviour
 
     [SerializeField] private KnifeMovement knifeMovement;
 
+    [SerializeField] private LevelBuilder levelBuilder;
+
+    [Header("Buttons")]
+
     [SerializeField] private Button gameOverRestartButton;
 
     [SerializeField] private Button levelEndRestartButton;
@@ -37,6 +41,7 @@ public class GamePhaseManager : MonoBehaviour
     {
         knifeMovement.DisableMovement();
         uiManager.UpdateTotalMoneyText();
+        levelBuilder.CreateLevel();
     }
 
     public void ResetGame()
@@ -47,6 +52,8 @@ public class GamePhaseManager : MonoBehaviour
         knifeMovement.ResetToStartPosition();
         scoreManager.ResetMoneyEarnedThisRound();
         uiManager.UpdateTotalMoneyText();
+        levelBuilder.ResetLevelBuilder();
+        levelBuilder.CreateLevel();
     }
 
     public void StartGame()
