@@ -1,12 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BonusBlock
     - CutKnife
     - Cuttable
     - GamePhaseManager
     - InputManager
     - KnifeDeath
     - KnifeMovement
+    - ScoreManager
     - StabKnife
     - UIManager
     Cinemachine.dll:
@@ -65,41 +67,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1522}
     - Class: 114
-      Script: {instanceID: 2110}
+      Script: {instanceID: 1736}
     - Class: 114
-      Script: {instanceID: 2136}
+      Script: {instanceID: 1814}
     - Class: 114
-      Script: {instanceID: 2310}
+      Script: {instanceID: 2114}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 2140}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2846}
+      Script: {instanceID: 2408}
     - Class: 114
-      Script: {instanceID: 2912}
+      Script: {instanceID: 2464}
     - Class: 114
-      Script: {instanceID: 3010}
+      Script: {instanceID: 2534}
     - Class: 114
-      Script: {instanceID: 3128}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 3426}
+      Script: {instanceID: 3018}
     - Class: 114
-      Script: {instanceID: 3546}
+      Script: {instanceID: 3136}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 3344}
     - Class: 114
-      Script: {instanceID: 17414}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 20110}
+      Script: {instanceID: 3554}
     - Class: 114
-      Script: {instanceID: 20238}
+      Script: {instanceID: 3722}
+    - Class: 114
+      Script: {instanceID: 3852}
+    - Class: 114
+      Script: {instanceID: 3986}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -205,6 +211,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
+      Hash: 6c318d5e599dc3bfd2ca9988897165c8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GamePhaseManager
+  - hash:
+      serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -245,6 +257,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KnifeDeath
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -385,7 +403,7 @@ ScriptsOnlyBuild:
     className: CinemachineBlenderSettings
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: e3233f21426f1c9af95e4c655a61a750
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CutKnife
@@ -427,6 +445,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 5d5d9699ea927502763a5e039557176c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
+  - hash:
+      serializedVersion: 2
       Hash: 204ea02909ea3f738dafe3ff633d2a93
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -437,6 +461,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 16e5f1cab12d2afcb14a1479dad04a23
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BonusBlock
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -667,7 +697,7 @@ ScriptsOnlyBuild:
     className: CinemachineHardLookAt
   - hash:
       serializedVersion: 2
-      Hash: dcdb1953b87c25363a3b035c9b92a7f4
+      Hash: 21e879f0c73ca370a265bfd32aedc8eb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StabKnife
@@ -761,6 +791,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBasicMultiChannelPerlin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreManager
   - hash:
       serializedVersion: 2
       Hash: 5e84370a36252d6aa37d6a7bd37710f7
@@ -881,24 +917,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: KnifeDeath
-  - hash:
-      serializedVersion: 2
-      Hash: 5eefa7e18c8fdbdfdd7a4f129fc71296
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GamePhaseManager
-  - hash:
-      serializedVersion: 2
-      Hash: f642f3c3ae366ce47cd306914046d418
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
