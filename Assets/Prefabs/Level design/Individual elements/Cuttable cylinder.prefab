@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2820306800657115533}
   - component: {fileID: 3793939317924146495}
   - component: {fileID: 3078595927068294214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 8073239008809952574}
   - component: {fileID: 5015975075183076392}
   - component: {fileID: 8848685351451450724}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 6862981553888965293}
   - component: {fileID: 6862981553888965291}
   - component: {fileID: 6862981553888965290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cuttable cylinder
   m_TagString: Cuttable
   m_Icon: {fileID: 0}

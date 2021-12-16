@@ -6,6 +6,8 @@ public class KnifeMovement : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
 
+    [SerializeField] private Animator kniveAnimator;
+
     private Rigidbody rigidBody;
 
     private bool readyToMove = false;
@@ -13,7 +15,6 @@ public class KnifeMovement : MonoBehaviour
     private bool movementAllowed = false;
 
     private Vector3 movementForceVector = new Vector3(200f, 400f, 0f);
-    private Vector3 rotateForceVector = new Vector3(0f, 0f, -200f);
 
     private Vector3 startPosition;
     private Quaternion startRotation;
@@ -45,8 +46,8 @@ public class KnifeMovement : MonoBehaviour
         if (rigidBody.constraints == RigidbodyConstraints.FreezeAll)
             UnFreezeMovement();
 
+        kniveAnimator.SetTrigger(Constants.KnifeSlice_Trigger);
         rigidBody.velocity = Vector3.zero;
-        rigidBody.AddTorque(rotateForceVector);
         rigidBody.AddForce(movementForceVector);
     }
 
@@ -54,6 +55,15 @@ public class KnifeMovement : MonoBehaviour
     {
         rigidBody.velocity = Vector3.zero;
         rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+        kniveAnimator.speed = 0;
+    }
+
+    private void UnFreezeMovement()
+    {
+        rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
+                                RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+
+        kniveAnimator.speed = 1;
     }
 
     public void DisableMovement()
@@ -66,11 +76,6 @@ public class KnifeMovement : MonoBehaviour
     {
         movementAllowed = true;
         UnFreezeMovement();
-    }
-
-    private void UnFreezeMovement()
-    {
-        rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
     }
 
     public void ResetToStartPosition()

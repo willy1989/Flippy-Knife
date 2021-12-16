@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7052634091667976121}
   - component: {fileID: 7044198505863279052}
   - component: {fileID: 4285743992525682053}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 8726159961781256619}
   - component: {fileID: 6397141047701894251}
   - component: {fileID: 4254956049358433125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 7207990417363789505}
   - component: {fileID: 7207990417363789511}
   - component: {fileID: 7207990417363789510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cuttable ball
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
