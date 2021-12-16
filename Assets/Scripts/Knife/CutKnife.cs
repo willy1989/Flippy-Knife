@@ -9,10 +9,6 @@ public class CutKnife : MonoBehaviour
 
     [SerializeField] private UIManager uiManager;
 
-    public Action TriggerEnterWithCuttableEvent;
-
-    public Action TriggerExitWithCuttableEvent;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(Constants.Cuttable_Tag) == true)
@@ -21,16 +17,6 @@ public class CutKnife : MonoBehaviour
             scoreManager.IncreaseTotalMoney(points: 1);
             scoreManager.IncreaseCurrentScore(points: 1);
             uiManager.UpdateTotalMoneyText();
-
-            TriggerEnterWithCuttableEvent();
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag(Constants.Cuttable_Tag) == true)
-        {
-            TriggerExitWithCuttableEvent();
         }
     }
 }
