@@ -6,6 +6,10 @@ public class KnifeMovement : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
 
+    [SerializeField] private Animator kniveAnimator;
+
+    [SerializeField] private CutKnife cutKnife;
+
     private Rigidbody rigidBody;
 
     private bool readyToMove = false;
@@ -20,6 +24,8 @@ public class KnifeMovement : MonoBehaviour
 
     private void Awake()
     {
+        cutKnife.TriggerEnterWithCuttableEvent += StartIdleAnimation;
+        cutKnife.TriggerExitWithCuttableEvent += StartSliceAnimation;
         startPosition = transform.position;
         startRotation = transform.rotation;
         rigidBody = GetComponent<Rigidbody>();
@@ -45,8 +51,9 @@ public class KnifeMovement : MonoBehaviour
         if (rigidBody.constraints == RigidbodyConstraints.FreezeAll)
             UnFreezeMovement();
 
+        kniveAnimator.SetBool(Constants.KnifeSlice_Bool, true);
+
         rigidBody.velocity = Vector3.zero;
-        rigidBody.AddTorque(rotateForceVector);
         rigidBody.AddForce(movementForceVector);
     }
 
@@ -54,6 +61,15 @@ public class KnifeMovement : MonoBehaviour
     {
         rigidBody.velocity = Vector3.zero;
         rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+        kniveAnimator.speed = 0;
+    }
+
+    private void UnFreezeMovement()
+    {
+        rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
+                                RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+
+        kniveAnimator.speed = 1;
     }
 
     public void DisableMovement()
@@ -67,15 +83,22 @@ public class KnifeMovement : MonoBehaviour
         movementAllowed = true;
         UnFreezeMovement();
     }
-
-    private void UnFreezeMovement()
+    
+    private void StartIdleAnimation()
     {
-        rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+        kniveAnimator.SetBool(Constants.KnifeSlice_Bool, false);
+    }
+
+    private void StartSliceAnimation()
+    {
+        kniveAnimator.SetBool(Constants.KnifeSlice_Bool, true);
     }
 
     public void ResetToStartPosition()
     {
         transform.position = startPosition;
         transform.rotation = startRotation;
+
+        kniveAnimator.SetTrigger(Constants.KnifeIdle_Trigger);
     }
 }

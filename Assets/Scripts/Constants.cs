@@ -12,4 +12,8 @@ public static class Constants
 
     // Player prefs
     public const string TotalMoney_PlayerPrefs = "TotalMoney";
+
+    // Animation
+    public const string KnifeSlice_Bool = "Slice";
+    public const string KnifeIdle_Trigger = "Idle";
 }

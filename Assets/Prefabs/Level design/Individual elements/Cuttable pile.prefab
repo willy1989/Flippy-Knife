@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1198820284191702459}
   - component: {fileID: 7790697516664943590}
   - component: {fileID: 6483600160337152991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab (8)
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4712351047368417791}
   - component: {fileID: 7916471545028543797}
   - component: {fileID: 2842230812319790741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 8088201688008853068}
   - component: {fileID: 6390953418478252899}
   - component: {fileID: 8378366292621872866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab (2)
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 2572658677456443598}
   - component: {fileID: 6309903681658482091}
   - component: {fileID: 2664588719227674987}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab (6)
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 910792423862995681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cuttable pile
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 3044081920178906985}
   - component: {fileID: 4607421407332863466}
   - component: {fileID: 502972804617083904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 7186304761146660918}
   - component: {fileID: 3483315548262840215}
   - component: {fileID: 1320578816502878459}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab (4)
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 1531040642324606887}
   - component: {fileID: 6142353930451859134}
   - component: {fileID: 4815702346470481070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 3327144840156164449}
   - component: {fileID: 3013951275276669341}
   - component: {fileID: 1186177427670130243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab (5)
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 8013924135530467804}
   - component: {fileID: 1936442068216946633}
   - component: {fileID: 8231662817198536146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 3050467818255046831}
   - component: {fileID: 3050467818255046830}
   - component: {fileID: 3050467818255046833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ GameObject:
   - component: {fileID: 3050467818259357951}
   - component: {fileID: 3050467818259357950}
   - component: {fileID: 3050467818259357697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 3050467818993353061}
   - component: {fileID: 3050467818993353059}
   - component: {fileID: 3050467818993353058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -1078,7 +1078,7 @@ GameObject:
   - component: {fileID: 7885640780744772250}
   - component: {fileID: 1501106425251561277}
   - component: {fileID: 4157259125956146192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1190,7 +1190,7 @@ GameObject:
   - component: {fileID: 8890565782492182642}
   - component: {fileID: 5350795786995524733}
   - component: {fileID: 5981476153291438372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1300,7 @@ GameObject:
   - component: {fileID: 8724614278267239678}
   - component: {fileID: 6058655123681256630}
   - component: {fileID: 5089628935843280427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab (3)
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -1361,7 +1361,7 @@ GameObject:
   - component: {fileID: 1477174286600453111}
   - component: {fileID: 1022580922149841493}
   - component: {fileID: 2418450188774371044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,7 +1473,7 @@ GameObject:
   - component: {fileID: 6996663444577475396}
   - component: {fileID: 395793593190434423}
   - component: {fileID: 2769274383322961299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1585,7 +1585,7 @@ GameObject:
   - component: {fileID: 6101214638523615749}
   - component: {fileID: 1978352714241202833}
   - component: {fileID: 6815176230789884505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1697,7 +1697,7 @@ GameObject:
   - component: {fileID: 1573860210039690595}
   - component: {fileID: 7308343967738683929}
   - component: {fileID: 2547816247589602021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1807,7 +1807,7 @@ GameObject:
   - component: {fileID: 6874792357784809209}
   - component: {fileID: 9000706677429175476}
   - component: {fileID: 1515697783832003044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab (7)
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
@@ -1868,7 +1868,7 @@ GameObject:
   - component: {fileID: 2160919613654185965}
   - component: {fileID: 4807290594068055406}
   - component: {fileID: 5408428215237638429}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1980,7 +1980,7 @@ GameObject:
   - component: {fileID: 1374869306370960478}
   - component: {fileID: 5235178548788615138}
   - component: {fileID: 2290969909860389253}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2092,7 +2092,7 @@ GameObject:
   - component: {fileID: 1706361516301672967}
   - component: {fileID: 3483106571227066988}
   - component: {fileID: 157432551577949322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2204,7 +2204,7 @@ GameObject:
   - component: {fileID: 7149899337444508802}
   - component: {fileID: 2602000891015002857}
   - component: {fileID: 1294947294965981021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2316,7 +2316,7 @@ GameObject:
   - component: {fileID: 3633483568032546286}
   - component: {fileID: 4750320852911226585}
   - component: {fileID: 7605462507147568136}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2428,7 +2428,7 @@ GameObject:
   - component: {fileID: 8349097188044136071}
   - component: {fileID: 2681974376018788571}
   - component: {fileID: 2850836465475332026}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2538,7 +2538,7 @@ GameObject:
   - component: {fileID: 5642908778569917082}
   - component: {fileID: 6611090988387710405}
   - component: {fileID: 2865228622527062800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slab (1)
   m_TagString: Cuttable
   m_Icon: {fileID: 0}
