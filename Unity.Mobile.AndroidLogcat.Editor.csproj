@@ -56,27 +56,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatStyles.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidTools\AndroidBridge.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatUserSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidTools\Paths.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatCallbacks.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatTags.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatColumnData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\Tasks\AndroidLogcatTaskInput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatConsoleWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatDeviceQuery.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatStatusBar.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\UI\AndroidLogcatSymbolList.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\Tasks\AndroidLogcatTaskResult.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\UI\AndroidLogcatReordableList.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidMemoryStatistics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatUtilities.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatRuntime.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\Tasks\AndroidLogcatConnectToDeviceTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatBuildInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatMemoryViewer.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatMessageProvider.cs" />
@@ -85,16 +72,29 @@
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatProjectSettingsProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatStacktraceWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatMessagesViews.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcat.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatScreenCaptureWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatDevice.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatPackageInformation.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatSettingsProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatIPWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatTagInformation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidTools\Shell.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\UI\AndroidLogcatRegexList.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\Tasks\AndroidLogcatDispatcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidTools\AndroidBridge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidTools\Paths.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\Tasks\AndroidLogcatTaskInput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatConsoleWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatDeviceQuery.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\UI\AndroidLogcatReordableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidMemoryStatistics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatRuntime.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\Tasks\AndroidLogcatConnectToDeviceTask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidLogcatIPWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\AndroidTools\Shell.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.1\Editor\Unity.Mobile.AndroidLogcat.Editor.asmdef" />

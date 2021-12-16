@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GamePhaseManager : MonoBehaviour
 {
-    [SerializeField] private GameObject KnifPrefab;
+    public GameObject KnifePrefab;
 
     [SerializeField] private CinemachineVirtualCamera kniveFollowCamera;
 
@@ -43,7 +43,7 @@ public class GamePhaseManager : MonoBehaviour
 
     private void Start()
     {
-        GameObject knife = Instantiate(KnifPrefab, knifeSpawnPosition.position, Quaternion.identity);
+        GameObject knife = Instantiate(KnifePrefab, knifeSpawnPosition.position, Quaternion.identity);
         kniveFollowCamera.Follow =knife.transform;
         knifeMovement = knife.GetComponent<KnifeMovement>();
         knifeDeath = knife.GetComponentInChildren<KnifeDeath>();

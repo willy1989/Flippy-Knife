@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject startUI;
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject levelEndUI;
+    [SerializeField] private GameObject shopUI;
     [SerializeField] private Text totalMoneyText;
     [SerializeField] private Text bonusMoneyEarned;
 
@@ -42,9 +43,14 @@ public class UIManager : MonoBehaviour
         levelEndUI.SetActive(OnOff);
     }
 
+    public void ToggleShopUI(bool OnOff)
+    {
+        shopUI.SetActive(OnOff);
+    }
+
     public void UpdateBonusMoneyEarned()
     {
-        bonusMoneyEarned.text = "+$"+(ScoreManager.Instance.BonusMultiplier* ScoreManager.Instance.CurrentScore).ToString();
+        bonusMoneyEarned.text = "+$"+(ScoreManager.Instance.BonusMultiplier * ScoreManager.Instance.CurrentScore).ToString();
     }
 
     public void UpdateTotalMoneyText()
