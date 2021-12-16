@@ -7,6 +7,21 @@ public class InputManager : MonoBehaviour
 {
     public Action ActionButtonPressedEvent;
 
+    public static InputManager Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     private void Update()
     {
         UpdateActionButtonStatus();

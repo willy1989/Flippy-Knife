@@ -26,6 +26,21 @@ public class ScoreManager : MonoBehaviour
 
     public int BonusMultiplier { get; private set; }
 
+    public static ScoreManager Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     public void IncreaseTotalMoney(int points)
     {
         totalMoney += points;

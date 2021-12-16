@@ -21,8 +21,22 @@ public class LevelBuilder : MonoBehaviour
 
     private Vector3 spaceBetweenBlocks = new Vector3(5f, 0f, 0f);
 
+    public static LevelBuilder Instance;
+
+
+
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        else
+        {
+            Destroy(this);
+        }
+
         currentBlockSpawnPosition = levelStartPosition;
         availableBlockPrefabs = levelBlockPrefabs.ToList();
     }

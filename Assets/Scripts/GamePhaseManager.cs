@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,15 +6,15 @@ using UnityEngine.UI;
 
 public class GamePhaseManager : MonoBehaviour
 {
-    [SerializeField] private UIManager uiManager;
+    [SerializeField] private GameObject KnifPrefab;
 
-    [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private CinemachineVirtualCamera kniveFollowCamera;
 
-    [SerializeField] private KnifeDeath knifeDeath;
+    [SerializeField] private Transform knifeSpawnPosition;
 
-    [SerializeField] private KnifeMovement knifeMovement;
+    private KnifeDeath knifeDeath;
 
-    [SerializeField] private LevelBuilder levelBuilder;
+    private KnifeMovement knifeMovement;
 
     [Header("Buttons")]
 
@@ -23,8 +24,35 @@ public class GamePhaseManager : MonoBehaviour
 
     [SerializeField] private Button enableMovementButton;
 
+    public static GamePhaseManager Instance;
+
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+            
+        else
+        {
+            Destroy(this);
+        }
+
+        
+    }
+
+    private void Start()
+    {
+        GameObject knife = Instantiate(KnifPrefab, knifeSpawnPosition.position, Quaternion.identity);
+        kniveFollowCamera.Follow =knife.transform;
+        knifeMovement = knife.GetComponent<KnifeMovement>();
+        knifeDeath = knife.GetComponentInChildren<KnifeDeath>();
+        knifeMovement.SetUpSword();
+        knifeMovement.DisableMovement();
+
+        UIManager.Instance.UpdateTotalMoneyText();
+        LevelBuilder.Instance.CreateLevel();
+
         gameOverRestartButton.onClick.RemoveAllListeners();
         gameOverRestartButton.onClick.AddListener(ResetGame);
 
@@ -37,41 +65,34 @@ public class GamePhaseManager : MonoBehaviour
         knifeDeath.DeathEvent += GameOver;
     }
 
-    private void Start()
-    {
-        knifeMovement.DisableMovement();
-        uiManager.UpdateTotalMoneyText();
-        levelBuilder.CreateLevel();
-    }
-
     public void ResetGame()
     {
-        uiManager.ToggleStartUI(OnOff: true);
-        uiManager.ToggleGameOverUI(OnOff: false);
-        uiManager.ToggleLevelEndUI(OnOff: false);
+        UIManager.Instance.ToggleStartUI(OnOff: true);
+        UIManager.Instance.ToggleGameOverUI(OnOff: false);
+        UIManager.Instance.ToggleLevelEndUI(OnOff: false);
         knifeMovement.ResetToStartPosition();
-        scoreManager.ResetMoneyEarnedThisRound();
-        uiManager.UpdateTotalMoneyText();
-        levelBuilder.ResetLevelBuilder();
-        levelBuilder.CreateLevel();
+        ScoreManager.Instance.ResetMoneyEarnedThisRound();
+        UIManager.Instance.UpdateTotalMoneyText();
+        LevelBuilder.Instance.ResetLevelBuilder();
+        LevelBuilder.Instance.CreateLevel();
     }
 
     public void StartGame()
     {
-        uiManager.ToggleStartUI(OnOff: false);
+        UIManager.Instance.ToggleStartUI(OnOff: false);
         knifeMovement.EnableMovement();
     }
 
     public void GameOver()
     {
-        uiManager.UpdateTotalMoneyText();
-        uiManager.ToggleGameOverUI(OnOff: true);
+        UIManager.Instance.UpdateTotalMoneyText();
+        UIManager.Instance.ToggleGameOverUI(OnOff: true);
         knifeMovement.DisableMovement();
     }
 
     public void ReachedLevelEnd()
     {
-        uiManager.ToggleLevelEndUI(OnOff: true);
-        uiManager.UpdateBonusMoneyEarned();
+        UIManager.Instance.ToggleLevelEndUI(OnOff: true);
+        UIManager.Instance.UpdateBonusMoneyEarned();
     }
 }

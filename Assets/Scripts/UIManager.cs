@@ -5,14 +5,27 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private ScoreManager scoreManager;
-
     [Header("UI elements")]
     [SerializeField] private GameObject startUI;
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject levelEndUI;
     [SerializeField] private Text totalMoneyText;
     [SerializeField] private Text bonusMoneyEarned;
+
+    public static UIManager Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        else
+        {
+            Destroy(this);
+        }
+    }
 
     public void ToggleStartUI(bool OnOff)
     {
@@ -31,11 +44,11 @@ public class UIManager : MonoBehaviour
 
     public void UpdateBonusMoneyEarned()
     {
-        bonusMoneyEarned.text = "+$"+(scoreManager.BonusMultiplier*scoreManager.CurrentScore).ToString();
+        bonusMoneyEarned.text = "+$"+(ScoreManager.Instance.BonusMultiplier* ScoreManager.Instance.CurrentScore).ToString();
     }
 
     public void UpdateTotalMoneyText()
     {
-        totalMoneyText.text = "$" + scoreManager.TotalMoney.ToString();
+        totalMoneyText.text = "$" + ScoreManager.Instance.TotalMoney.ToString();
     }
 }
