@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LevelBuilder : MonoBehaviour
 {
-    [SerializeField] private GameObject[] levelBlockPrefabs;
+    [SerializeField] private GameObject[] AllBlockPrefabs;
 
     [SerializeField] private GameObject BonusBlocks;
 
@@ -13,16 +13,36 @@ public class LevelBuilder : MonoBehaviour
 
     private List<GameObject> blocksInGame = new List<GameObject>();
 
+
+
     private Vector3 levelStartPosition = Vector3.zero;
 
     private Vector3 currentBlockSpawnPosition;
 
-    private const int levelBlockNumber = 6;
+    private int levelBlockNumber = 4;
 
     private Vector3 spaceBetweenBlocks = new Vector3(3f, 0f, 0f);
 
     public static LevelBuilder Instance;
 
+    private float unlockedLevels
+    {
+        get
+        {
+            return PlayerPrefs.GetFloat(Constants.LevelsUnlocked, 4);
+        }
+
+        set
+        {
+            if(value <= AllBlockPrefabs.Length-1)
+                PlayerPrefs.SetFloat(Constants.LevelsUnlocked, value);
+        }
+    }
+
+    public void IncrementLevelUnlocked()
+    {
+        unlockedLevels+= 0.25f;
+    }
 
     private void Awake()
     {
@@ -37,7 +57,30 @@ public class LevelBuilder : MonoBehaviour
         }
 
         currentBlockSpawnPosition = levelStartPosition;
-        availableBlockPrefabs = levelBlockPrefabs.ToList();
+
+        //PlayerPrefs.SetFloat(Constants.LevelsUnlocked, 4f);
+
+        SetAvailableLevelBlocks();
+    }
+
+    private void SetAvailableLevelBlocks()
+    {
+        availableBlockPrefabs.Clear();
+
+        if (unlockedLevels >= 6 && unlockedLevels < 10)
+        {
+            levelBlockNumber = 5;
+        }
+
+        else if (levelBlockNumber >= 10)
+        {
+            levelBlockNumber = 7;
+        }
+
+        for (int i = 0; i < unlockedLevels; i++)
+        {
+            availableBlockPrefabs.Add(AllBlockPrefabs[i]);
+        }
     }
 
     public void CreateLevel()
@@ -45,6 +88,7 @@ public class LevelBuilder : MonoBehaviour
         for(int i = 0; i < levelBlockNumber; i++)
         {
             GameObject spawnedLevelBlock = Instantiate(GetRandomLevelBlock(), currentBlockSpawnPosition, Quaternion.identity);
+
             blocksInGame.Add(spawnedLevelBlock);
 
             currentBlockSpawnPosition = spawnedLevelBlock.GetComponent<LevelBlocksData>().BlockEnd.position + spaceBetweenBlocks;
@@ -74,9 +118,7 @@ public class LevelBuilder : MonoBehaviour
 
         blocksInGame.Clear();
 
-        availableBlockPrefabs.Clear();
-
-        availableBlockPrefabs = levelBlockPrefabs.ToList();
+        SetAvailableLevelBlocks();
 
         currentBlockSpawnPosition = levelStartPosition;
     }

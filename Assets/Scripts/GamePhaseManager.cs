@@ -87,6 +87,7 @@ public class GamePhaseManager : MonoBehaviour
     {
         UIManager.Instance.ToggleLevelEndUI(OnOff: true);
         UIManager.Instance.UpdateBonusMoneyEarned();
+        LevelBuilder.Instance.IncrementLevelUnlocked();
     }
 
     public void ChangeKnife(GameObject newKnifePrefab)

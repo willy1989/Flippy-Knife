@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kniveAnimator: {fileID: 2841620610598949068}
-  movementForceVector: {x: 200, y: 250, z: 0}
+  movementForceVector: {x: 200, y: 300, z: 0}
   rotationSpeed: 0.75
 --- !u!33 &2841620610598949066
 MeshFilter:
