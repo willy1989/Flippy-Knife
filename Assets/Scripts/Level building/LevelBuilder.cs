@@ -19,10 +19,9 @@ public class LevelBuilder : MonoBehaviour
 
     private const int levelBlockNumber = 6;
 
-    private Vector3 spaceBetweenBlocks = new Vector3(5f, 0f, 0f);
+    private Vector3 spaceBetweenBlocks = new Vector3(3f, 0f, 0f);
 
     public static LevelBuilder Instance;
-
 
 
     private void Awake()
