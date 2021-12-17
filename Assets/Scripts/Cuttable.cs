@@ -26,5 +26,18 @@ public class Cuttable : MonoBehaviour
 
         halves[0].AddForce(Vector3.forward * 200f);
         halves[1].AddForce(Vector3.back * 200f);
+
+        halves[0].transform.parent = null;
+        halves[1].transform.parent = null;
+
+        StartCoroutine(destroyGameObject(halves[0].gameObject, halves[1].gameObject));
+    }
+
+    private IEnumerator destroyGameObject(GameObject halfA, GameObject halfB)
+    {
+        yield return new WaitForSeconds(3f);
+
+        Destroy(halfA.gameObject);
+        Destroy(halfB.gameObject);
     }
 }
