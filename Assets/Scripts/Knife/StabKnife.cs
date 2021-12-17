@@ -6,10 +6,6 @@ public class StabKnife : MonoBehaviour
 {
     [SerializeField] private KnifeMovement knifeMovement;
 
-    [SerializeField] private ScoreManager scoreManager;
-
-    [SerializeField] private GamePhaseManager gamePhaseManager;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(Constants.Stabbable_Tag) == true)
@@ -18,8 +14,8 @@ public class StabKnife : MonoBehaviour
         else if (other.CompareTag(Constants.BonusBlock_Tag) == true)
         {
             knifeMovement.DisableMovement();
-            scoreManager.AddBonusMoney(other.GetComponent<BonusBlock>().Multiplier);
-            gamePhaseManager.ReachedLevelEnd();
+            ScoreManager.Instance.AddBonusMoney(other.GetComponent<BonusBlock>().Multiplier);
+            GamePhaseManager.Instance.ReachedLevelEnd();
         }
             
     }

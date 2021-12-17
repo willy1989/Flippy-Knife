@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class KnifeMovement : MonoBehaviour
 {
-    [SerializeField] private InputManager inputManager;
-
     [SerializeField] private Animator kniveAnimator;
+
+    [Header("Sword stat")]
+
+    [SerializeField] private Vector3 movementForceVector;
+
+    [SerializeField] private float rotationSpeed;
 
     private Rigidbody rigidBody;
 
@@ -14,17 +18,21 @@ public class KnifeMovement : MonoBehaviour
 
     private bool movementAllowed = false;
 
-    private Vector3 movementForceVector = new Vector3(200f, 400f, 0f);
-
     private Vector3 startPosition;
     private Quaternion startRotation;
 
-    private void Awake()
+    public void SetUpSword()
     {
         startPosition = transform.position;
         startRotation = transform.rotation;
+        kniveAnimator.speed = rotationSpeed;
         rigidBody = GetComponent<Rigidbody>();
-        inputManager.ActionButtonPressedEvent += PrepareForJump;
+        InputManager.Instance.ActionButtonPressedEvent += PrepareForJump;
+    }
+
+    private void UnsetUpSword()
+    {
+        InputManager.Instance.ActionButtonPressedEvent -= PrepareForJump;
     }
 
     private void FixedUpdate()
@@ -63,7 +71,7 @@ public class KnifeMovement : MonoBehaviour
         rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
                                 RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 
-        kniveAnimator.speed = 1;
+        kniveAnimator.speed = rotationSpeed;
     }
 
     public void DisableMovement()
