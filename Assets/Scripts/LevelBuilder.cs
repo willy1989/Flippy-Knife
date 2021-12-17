@@ -51,7 +51,8 @@ public class LevelBuilder : MonoBehaviour
             currentBlockSpawnPosition += spaceBetweenBlocks;
         }
 
-        Instantiate(BonusBlocks, currentBlockSpawnPosition, Quaternion.identity);
+        GameObject spawnedBonusBlock = Instantiate(BonusBlocks, currentBlockSpawnPosition, Quaternion.identity);
+        blocksInGame.Add(spawnedBonusBlock);
     }
 
     private GameObject GetRandomLevelBlock()

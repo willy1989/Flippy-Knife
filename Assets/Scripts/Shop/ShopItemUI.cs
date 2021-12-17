@@ -13,7 +13,7 @@ public class ShopItemUI : MonoBehaviour
     [SerializeField] private Text itemPrice;
     [SerializeField] private Button buyButton;
 
-    private void Start()
+    private void OnEnable()
     {
         DisplayShopItemInfo();
     }
@@ -39,6 +39,7 @@ public class ShopItemUI : MonoBehaviour
 
     public void SelectItem()
     {
-        GamePhaseManager.Instance.KnifePrefab = shopItem.Sword;
+        GamePhaseManager.Instance.ChangeKnife(shopItem.Sword);
+        GamePhaseManager.Instance.SpawnNewKnife();
     }
 }

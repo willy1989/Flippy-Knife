@@ -8,6 +8,8 @@ public class GamePhaseManager : MonoBehaviour
 {
     public GameObject KnifePrefab;
 
+    private GameObject currentKnife;
+
     [SerializeField] private CinemachineVirtualCamera kniveFollowCamera;
 
     [SerializeField] private Transform knifeSpawnPosition;
@@ -37,18 +39,11 @@ public class GamePhaseManager : MonoBehaviour
         {
             Destroy(this);
         }
-
-        
     }
 
     private void Start()
     {
-        GameObject knife = Instantiate(KnifePrefab, knifeSpawnPosition.position, Quaternion.identity);
-        kniveFollowCamera.Follow =knife.transform;
-        knifeMovement = knife.GetComponent<KnifeMovement>();
-        knifeDeath = knife.GetComponentInChildren<KnifeDeath>();
-        knifeMovement.SetUpSword();
-        knifeMovement.DisableMovement();
+        SpawnNewKnife();
 
         UIManager.Instance.UpdateTotalMoneyText();
         LevelBuilder.Instance.CreateLevel();
@@ -61,8 +56,6 @@ public class GamePhaseManager : MonoBehaviour
 
         enableMovementButton.onClick.RemoveAllListeners();
         enableMovementButton.onClick.AddListener(StartGame);
-
-        knifeDeath.DeathEvent += GameOver;
     }
 
     public void ResetGame()
@@ -94,5 +87,22 @@ public class GamePhaseManager : MonoBehaviour
     {
         UIManager.Instance.ToggleLevelEndUI(OnOff: true);
         UIManager.Instance.UpdateBonusMoneyEarned();
+    }
+
+    public void ChangeKnife(GameObject newKnifePrefab)
+    {
+        Destroy(currentKnife);
+        KnifePrefab = newKnifePrefab;
+    }
+
+    public void SpawnNewKnife()
+    {
+        currentKnife = Instantiate(KnifePrefab, knifeSpawnPosition.position, Quaternion.identity);
+        kniveFollowCamera.Follow = currentKnife.transform;
+        knifeMovement = currentKnife.GetComponent<KnifeMovement>();
+        knifeDeath = currentKnife.GetComponentInChildren<KnifeDeath>();
+        knifeMovement.SetUpSword();
+        knifeMovement.DisableMovement();
+        knifeDeath.DeathEvent += GameOver;
     }
 }
