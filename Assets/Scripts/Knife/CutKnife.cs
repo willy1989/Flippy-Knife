@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CutKnife : MonoBehaviour
 {
+    [SerializeField] new ParticleSystem particleSystem;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(Constants.Cuttable_Tag) == true)
@@ -13,6 +15,7 @@ public class CutKnife : MonoBehaviour
             ScoreManager.Instance.IncreaseTotalMoney(points: 1);
             ScoreManager.Instance.IncreaseCurrentScore(points: 1);
             UIManager.Instance.UpdateTotalMoneyText();
+            particleSystem.Play();
         }
     }
 }
