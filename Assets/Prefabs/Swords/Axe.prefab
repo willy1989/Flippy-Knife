@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 2841620610598949068}
   - component: {fileID: 1931980445066297765}
   - component: {fileID: 822180912918518339}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kniveAnimator: {fileID: 2841620610598949068}
-  movementForceVector: {x: 200, y: 300, z: 0}
+  movementForceVector: {x: 300, y: 300, z: 0}
   rotationSpeed: 1
 --- !u!33 &2841620610598949066
 MeshFilter:

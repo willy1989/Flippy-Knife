@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2841620610471796086}
   - component: {fileID: 2841620610471796087}
   - component: {fileID: 2841620610471796075}
+  - component: {fileID: 4646579652328820341}
   m_Layer: 0
   m_Name: Blade
   m_TagString: Untagged
@@ -71,8 +72,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9855881, y: 1.0276327, z: 1}
-  m_Center: {x: -0.016559083, y: 0.00834795, z: 0}
+  m_Size: {x: 0.6339013, y: 0.7807384, z: 1}
+  m_Center: {x: -0.049365144, y: -0.19820575, z: 0}
+--- !u!65 &4646579652328820341
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2841620610471796077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06685718, y: 0.27812237, z: 1}
+  m_Center: {x: -0.030650914, y: 0.30937642, z: 0}
 --- !u!1 &2841620610481651442
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +159,7 @@ GameObject:
   - component: {fileID: 2841620610598949068}
   - component: {fileID: 1668440008254250861}
   - component: {fileID: 4259814028156953112}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,8 +225,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.44
-  m_Center: {x: 0, y: -0.03, z: 0}
+  m_Radius: 0.26
+  m_Center: {x: 0, y: -0.15, z: 0}
 --- !u!95 &2841620610598949068
 Animator:
   serializedVersion: 3

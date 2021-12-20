@@ -30,11 +30,6 @@ public class KnifeMovement : MonoBehaviour
         InputManager.Instance.ActionButtonPressedEvent += PrepareForJump;
     }
 
-    private void UnsetUpSword()
-    {
-        InputManager.Instance.ActionButtonPressedEvent -= PrepareForJump;
-    }
-
     private void FixedUpdate()
     {
         if(readyToMove == true && movementAllowed == true)
@@ -88,6 +83,7 @@ public class KnifeMovement : MonoBehaviour
 
     public void ResetToStartPosition()
     {
+        kniveAnimator.Play("Knife blade idle");
         transform.position = startPosition;
         transform.rotation = startRotation;
     }

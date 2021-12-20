@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sword: {fileID: 2841620610598949071, guid: f2197a5008124544492659c6e84f93e9, type: 3}
   Name: Katana
-  Price: 50000
+  Price: 10000
   Unlocked: 0

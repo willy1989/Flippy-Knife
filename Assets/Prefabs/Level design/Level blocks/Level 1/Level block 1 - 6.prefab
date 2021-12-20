@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7110251185531135003}
   - component: {fileID: 3187334342178728848}
   m_Layer: 0
-  m_Name: Level block - 6
+  m_Name: Level block 1 - 6
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -104,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5026261957220975961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.03999996, z: 0}
+  m_LocalPosition: {x: 1, y: 1.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 873550300036948581}
@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 5954614684863492686, guid: 96b35db87d3a56a40911fc0fd99bc4d1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.2699995
+      value: 9.0199995
       objectReference: {fileID: 0}
     - target: {fileID: 5954614684863492686, guid: 96b35db87d3a56a40911fc0fd99bc4d1,
         type: 3}
@@ -449,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 8018512010082643047, guid: 028360ffcf81bc24e92b56185b009e65,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5159998
+      value: 7.266
       objectReference: {fileID: 0}
     - target: {fileID: 8018512010082643047, guid: 028360ffcf81bc24e92b56185b009e65,
         type: 3}
