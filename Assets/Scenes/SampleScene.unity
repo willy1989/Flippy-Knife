@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5577cbb9ad694324aa61e48b2de2821a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KnifePrefab: {fileID: 2841620610598949071, guid: f2197a5008124544492659c6e84f93e9,
+  KnifePrefab: {fileID: 2841620610598949071, guid: d4bc8da2a3d953946a04f7405846e123,
     type: 3}
   kniveFollowCamera: {fileID: 1674976940}
   knifeSpawnPosition: {fileID: 1360838414}
