@@ -50,11 +50,11 @@ public class UIManager : MonoBehaviour
 
     public void UpdateBonusMoneyEarned()
     {
-        bonusMoneyEarned.text = "+$"+(ScoreManager.Instance.BonusMultiplier * ScoreManager.Instance.CurrentScore).ToString();
+        bonusMoneyEarned.text = "+ "+(ScoreManager.Instance.BonusMultiplier * ScoreManager.Instance.CurrentScore).ToString();
     }
 
     public void UpdateTotalMoneyText()
     {
-        totalMoneyText.text = "$" + ScoreManager.Instance.TotalMoney.ToString();
+        totalMoneyText.text = ScoreManager.Instance.TotalMoney.ToString();
     }
 }
