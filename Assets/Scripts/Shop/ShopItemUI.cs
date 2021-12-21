@@ -7,6 +7,10 @@ public class ShopItemUI : MonoBehaviour
 {
     [SerializeField] private ShopItem shopItem;
 
+    [SerializeField] private RawImage selectHighlight;
+
+    [SerializeField] private Transform selectHighlightPosition;
+
     [Header("UI elements")]
 
     [SerializeField] private Text itemPrice;
@@ -22,7 +26,10 @@ public class ShopItemUI : MonoBehaviour
         itemPrice.text = shopItem.Price.ToString();
 
         if (shopItem.Unlocked == true)
+        {
+            itemPrice.text = "";
             buyButton.gameObject.SetActive(false);
+        }   
     }
 
     public void BuyItem()
@@ -30,6 +37,7 @@ public class ShopItemUI : MonoBehaviour
         if (shopItem.Price <= ScoreManager.Instance.TotalMoney)
         {
             shopItem.Unlocked = true;
+            itemPrice.text = "";
             ScoreManager.Instance.TotalMoney -= shopItem.Price;
             UIManager.Instance.UpdateTotalMoneyText();
         }
@@ -39,5 +47,6 @@ public class ShopItemUI : MonoBehaviour
     {
         GamePhaseManager.Instance.ChangeKnife(shopItem.Sword);
         GamePhaseManager.Instance.SpawnNewKnife();
+        selectHighlight.rectTransform.position = selectHighlightPosition.GetComponent<RectTransform>().position;
     }
 }
