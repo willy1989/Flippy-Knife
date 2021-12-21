@@ -6,13 +6,17 @@ using UnityEngine.UI;
 
 public class GamePhaseManager : MonoBehaviour
 {
+    [SerializeField] private CinemachineVirtualCamera kniveFollowCamera;
+
+    [SerializeField] private CinemachineVirtualCamera startCamera;
+
+    [SerializeField] private CinemachineVirtualCamera levelEndCamera;
+
+    [SerializeField] private Transform knifeSpawnPosition;
+
     public GameObject KnifePrefab;
 
     private GameObject currentKnife;
-
-    [SerializeField] private CinemachineVirtualCamera kniveFollowCamera;
-
-    [SerializeField] private Transform knifeSpawnPosition;
 
     private KnifeDeath knifeDeath;
 
@@ -56,6 +60,8 @@ public class GamePhaseManager : MonoBehaviour
 
         enableMovementButton.onClick.RemoveAllListeners();
         enableMovementButton.onClick.AddListener(StartGame);
+
+        CameraManager.Instance.SwitchToFollowCamera();
     }
 
     public void ResetGame()
@@ -68,6 +74,7 @@ public class GamePhaseManager : MonoBehaviour
         UIManager.Instance.UpdateTotalMoneyText();
         LevelBuilder.Instance.ResetLevelBuilder();
         LevelBuilder.Instance.CreateLevel();
+        CameraManager.Instance.SwitchToStartCamera();
     }
 
     public void StartGame()
@@ -88,6 +95,7 @@ public class GamePhaseManager : MonoBehaviour
         UIManager.Instance.ToggleLevelEndUI(OnOff: true);
         UIManager.Instance.UpdateBonusMoneyEarned();
         LevelBuilder.Instance.IncrementLevelUnlocked();
+        CameraManager.Instance.SwitchToLevelEndCamera();
     }
 
     public void ChangeKnife(GameObject newKnifePrefab)
@@ -100,6 +108,7 @@ public class GamePhaseManager : MonoBehaviour
     {
         currentKnife = Instantiate(KnifePrefab, knifeSpawnPosition.position, Quaternion.identity);
         kniveFollowCamera.Follow = currentKnife.transform;
+        levelEndCamera.Follow = currentKnife.transform;
         knifeMovement = currentKnife.GetComponent<KnifeMovement>();
         knifeDeath = currentKnife.GetComponentInChildren<KnifeDeath>();
         knifeMovement.SetUpSword();

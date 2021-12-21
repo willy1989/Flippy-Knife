@@ -16,4 +16,7 @@ public static class Constants
 
     // Animation
     public const string KnifeSlice_Trigger = "Slice";
+    public const string FollowCamera_State = "Follow camera";
+    public const string StartCamera_State = "Start camera";
+    public const string LevelEndCamera_State = "End camera";
 }
