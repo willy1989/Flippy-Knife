@@ -884,7 +884,7 @@ ScriptsOnlyBuild:
     className: CinemachineHardLockToTarget
   - hash:
       serializedVersion: 2
-      Hash: a78ab7b73d683a09b8cf8cf1e1b179a2
+      Hash: adbc8b002ecc4136f97b6826ff5008b6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShopItemUI
