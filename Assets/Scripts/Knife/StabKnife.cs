@@ -9,13 +9,18 @@ public class StabKnife : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(Constants.Stabbable_Tag) == true)
+        {
             knifeMovement.FreezeMovement();
+            SoundManager.Instance.PlayStabSound();
+        }
+            
 
         else if (other.CompareTag(Constants.BonusBlock_Tag) == true)
         {
             knifeMovement.DisableMovement();
             ScoreManager.Instance.AddBonusMoney(other.GetComponent<BonusBlock>().Multiplier);
             GamePhaseManager.Instance.ReachedLevelEnd();
+            SoundManager.Instance.PlayWinSound();
         }
             
     }

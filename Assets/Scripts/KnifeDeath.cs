@@ -10,6 +10,10 @@ public class KnifeDeath : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(Constants.DeadlyToKnife_Tag) == true)
+        {
             DeathEvent();
+            SoundManager.Instance.PlayLoseSound();
+        }
+            
     }
 }

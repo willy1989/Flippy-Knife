@@ -52,6 +52,7 @@ public class KnifeMovement : MonoBehaviour
         kniveAnimator.SetTrigger(Constants.KnifeSlice_Trigger);
         rigidBody.velocity = Vector3.zero;
         rigidBody.AddForce(movementForceVector);
+        SoundManager.Instance.PlayJumpSound();
     }
 
     public void FreezeMovement()
