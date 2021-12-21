@@ -9,7 +9,6 @@ public class ShopItemUI : MonoBehaviour
 
     [Header("UI elements")]
 
-    [SerializeField] private Text itemName;
     [SerializeField] private Text itemPrice;
     [SerializeField] private Button buyButton;
 
@@ -20,7 +19,6 @@ public class ShopItemUI : MonoBehaviour
 
     public void DisplayShopItemInfo()
     {
-        itemName.text = shopItem.Name;
         itemPrice.text = shopItem.Price.ToString();
 
         if (shopItem.Unlocked == true)
