@@ -13,7 +13,6 @@ public class KnifeDeath : MonoBehaviour
         {
             DeathEvent();
             SoundManager.Instance.PlayLoseSound();
-        }
-            
+        }   
     }
 }

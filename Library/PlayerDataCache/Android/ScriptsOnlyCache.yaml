@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AdsManager
     - BonusBlock
     - CameraManager
     - CutKnife
@@ -15,6 +16,7 @@ ScriptsOnlyBuild:
     - Shop
     - ShopItem
     - ShopItemUI
+    - SoundManager
     - StabKnife
     - UIManager
     Cinemachine.dll:
@@ -24,20 +26,23 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineStateDrivenCamera
     - Cinemachine.CinemachineTransposer
     - Cinemachine.CinemachineVirtualCamera
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.Advertisements.dll:
+    - UnityEngine.Advertisements.Placeholder
+    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -76,6 +81,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -116,39 +125,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2400}
+      Script: {instanceID: 2344}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2402}
     - Class: 114
-      Script: {instanceID: 2534}
+      Script: {instanceID: 2470}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2536}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2730}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 2952}
+      Script: {instanceID: 2732}
     - Class: 114
-      Script: {instanceID: 2988}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 3150}
+      Script: {instanceID: 2990}
     - Class: 114
-      Script: {instanceID: 3168}
+      Script: {instanceID: 3152}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 3170}
     - Class: 114
-      Script: {instanceID: 3310}
+      Script: {instanceID: 3242}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 3312}
     - Class: 114
-      Script: {instanceID: 3550}
+      Script: {instanceID: 3448}
     - Class: 114
-      Script: {instanceID: 3616}
+      Script: {instanceID: 3552}
     - Class: 114
-      Script: {instanceID: 3738}
+      Script: {instanceID: 3618}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 3740}
+    - Class: 114
+      Script: {instanceID: 3752}
+    - Class: 114
+      Script: {instanceID: 25182}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -428,6 +441,12 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
+      Hash: bf16a52106c9a907e556148fa4a62fe5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundManager
+  - hash:
+      serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -632,7 +651,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: c14a3635431fc2a1dc7e8f795a080ff5
+      Hash: 7e616936ab36788f654035c3afd9e7fc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GamePhaseManager
@@ -1002,7 +1021,44 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBlendListCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: ApplicationQuit
+  - hash:
+      serializedVersion: 2
+      Hash: a325152ad9563ed900af221c132fea36
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: CoroutineExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 88e2c6f501bf5dead831a3e44c30de40
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Platform.Editor
+    className: BannerPlaceholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Monetization.dll
+    namespaceName: UnityEngine.Monetization
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AdsManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/willy/Documents/unity/Flippy Knife/devBuild.apk
+  playerPath: C:/Users/willy/Documents/unity/Flippy Knife - Willy Mercier/Flippy
+    knife.apk

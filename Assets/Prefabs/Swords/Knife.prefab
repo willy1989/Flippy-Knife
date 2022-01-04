@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kniveAnimator: {fileID: 2841620610598949068}
-  movementForceVector: {x: 200, y: 350, z: 0}
+  movementForceVector: {x: 250, y: 350, z: 0}
   rotationSpeed: 2
 --- !u!54 &2841620610598949064
 Rigidbody:

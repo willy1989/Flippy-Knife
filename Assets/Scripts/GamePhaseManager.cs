@@ -6,6 +6,12 @@ using UnityEngine.UI;
 
 public class GamePhaseManager : MonoBehaviour
 {
+    public static GamePhaseManager Instance;
+
+    [SerializeField] private AdsManager adsManager;
+
+    [Header("Cameras")]
+
     [SerializeField] private CinemachineVirtualCamera kniveFollowCamera;
 
     [SerializeField] private CinemachineVirtualCamera startCamera;
@@ -13,14 +19,6 @@ public class GamePhaseManager : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera levelEndCamera;
 
     [SerializeField] private Transform knifeSpawnPosition;
-
-    public GameObject KnifePrefab;
-
-    private GameObject currentKnife;
-
-    private KnifeDeath knifeDeath;
-
-    private KnifeMovement knifeMovement;
 
     [Header("Buttons")]
 
@@ -30,7 +28,13 @@ public class GamePhaseManager : MonoBehaviour
 
     [SerializeField] private Button enableMovementButton;
 
-    public static GamePhaseManager Instance;
+    public GameObject KnifePrefab;
+
+    private GameObject currentKnife;
+
+    private KnifeDeath knifeDeath;
+
+    private KnifeMovement knifeMovement;
 
     private void Awake()
     {
@@ -75,6 +79,8 @@ public class GamePhaseManager : MonoBehaviour
         LevelBuilder.Instance.ResetLevelBuilder();
         LevelBuilder.Instance.CreateLevel();
         CameraManager.Instance.SwitchToStartCamera();
+
+        adsManager.ShowInterstitialAd();
     }
 
     public void StartGame()
