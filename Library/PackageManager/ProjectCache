@@ -1,31 +1,171 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/willy/Documents/unity/Flippy Knife/Packages/manifest.json
+    m_FilePath: C:/Users/willy/Documents/unity/Flippy Knife - Willy Mercier/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637750916985230953
-    m_Hash: 1493627109
+      ticks: 637768860545993092
+    m_Hash: 43147921
   m_LockFileStatus:
-    m_FilePath: C:/Users/willy/Documents/unity/Flippy Knife/Packages/packages-lock.json
+    m_FilePath: C:/Users/willy/Documents/unity/Flippy Knife - Willy Mercier/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637750916985330695
-    m_Hash: 2180859351
+      ticks: 637768860546103014
+    m_Hash: 2597640020
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.unity.ads@3.6.1
+      testable: 0
+      isDirectDependency: 1
+      version: 3.6.1
+      source: 1
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.ads@3.6.1
+      assetPath: Packages/com.unity.ads
+      name: com.unity.ads
+      displayName: Advertisement
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        verified: 3.6.1
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - ads
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637433982320000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ads.git
+        revision: aa1c5a9556a9bb62eef662153cfaa1075805106f
+        path: 
     - packageId: com.unity.cinemachine@2.6.11
       testable: 0
       isDirectDependency: 1
       version: 2.6.11
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.cinemachine@2.6.11
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.cinemachine@2.6.11
       assetPath: Packages/com.unity.cinemachine
       name: com.unity.cinemachine
       displayName: Cinemachine
@@ -95,6 +235,7 @@ m_PackageAssets:
         - 2.8.1
         - 2.8.2
         - 2.8.3
+        - 2.8.4
         - 2.9.0-pre.1
         compatible:
         - 2.5.0
@@ -128,6 +269,7 @@ m_PackageAssets:
         - 2.8.1
         - 2.8.2
         - 2.8.3
+        - 2.8.4
         - 2.9.0-pre.1
         verified: 2.6.11
       dependencies: []
@@ -180,7 +322,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -300,7 +442,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -342,6 +484,7 @@ m_PackageAssets:
         - 3.0.5
         - 3.0.6
         - 3.0.7
+        - 3.0.9
         compatible:
         - 1.0.2
         - 1.0.6
@@ -368,6 +511,7 @@ m_PackageAssets:
         - 3.0.5
         - 3.0.6
         - 3.0.7
+        - 3.0.9
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -407,7 +551,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -496,7 +640,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -567,7 +711,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.1
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.mobile.android-logcat@1.2.1
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.mobile.android-logcat@1.2.1
       assetPath: Packages/com.unity.mobile.android-logcat
       name: com.unity.mobile.android-logcat
       displayName: Android Logcat
@@ -645,7 +789,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.2
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.mobile.notifications@1.3.2
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.mobile.notifications@1.3.2
       assetPath: Packages/com.unity.mobile.notifications
       name: com.unity.mobile.notifications
       displayName: Mobile Notifications
@@ -765,7 +909,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.24
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -861,7 +1005,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.4
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.textmeshpro@3.0.4
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.textmeshpro@3.0.4
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1028,7 +1172,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.6
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.timeline@1.4.6
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.timeline@1.4.6
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -2993,7 +3137,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: C:\Users\willy\Documents\unity\Flippy Knife - Willy Mercier\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -3051,5 +3195,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/willy/Documents/unity/Flippy Knife/Packages
+m_ProjectPath: C:/Users/willy/Documents/unity/Flippy Knife - Willy Mercier/Packages
 m_EditorVersion: 2020.3.2f1 (8fd9074bf66c)

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{53184C50-4240-696F-34E0-D10A522FFF72}</ProjectGuid>
+    <ProjectGuid>{644A0B83-D824-BA28-89EC-078C3999626B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Notifications.iOS</AssemblyName>
@@ -641,11 +641,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{9941029F-D0EB-0BD7-938D-5F86EA8FA60C}</Project>
+      <Project>{10684AB1-3A5D-0E25-554E-78D2174282F2}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{AA9DF700-9A50-2A7B-8330-49B24531B55E}</Project>
+      <Project>{69E17CE5-481E-FBE6-FED6-CBCE948A6EDB}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

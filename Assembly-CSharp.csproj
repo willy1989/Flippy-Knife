@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6BDCD737-4101-7830-8A16-7BC25BB68F8F}</ProjectGuid>
+    <ProjectGuid>{C3A83227-0554-77EB-4DA1-ACF23A9019B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Shop\ShopItem.cs" />
     <Compile Include="Assets\Scripts\Level building\LevelBlocksData.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Cuttable.cs" />
     <Compile Include="Assets\Scripts\Shop\ScoreManager.cs" />
     <Compile Include="Assets\GameManager.cs" />
@@ -74,7 +75,7 @@
     <Compile Include="Assets\Scripts\Shop\ShopItemUI.cs" />
     <Compile Include="Assets\Scripts\Shop\Shop.cs" />
     <Compile Include="Assets\Scripts\Knife\StabKnife.cs" />
-    <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\AdsManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -638,64 +639,76 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Cinemachine.csproj">
-      <Project>{581A6657-3C25-2DB6-D0C8-27249F1D79D8}</Project>
+      <Project>{C5A0E20B-B668-98E7-199F-9B3E983BFD43}</Project>
       <Name>Cinemachine</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{7584FD4E-7AEA-FBBF-C230-3855B7CD9734}</Project>
+      <Project>{5EB7ABE6-1F2C-D321-739A-ACF412A1EAA6}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{49FFD84C-E2BE-4359-78B2-F0CBEC1D10CB}</Project>
+      <Project>{0C8AD995-2FE2-1966-BF77-407C5E44B6AD}</Project>
       <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Notifications.csproj">
-      <Project>{40DB5A27-878B-F379-932E-2D228D8A6096}</Project>
+      <Project>{C950D4DD-D745-12A5-C711-3BE154D6D0D2}</Project>
       <Name>Unity.Notifications</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{CB6E12B8-B975-EDB7-D003-1EFDD6AD62E5}</Project>
+      <Project>{497DFEE8-366D-D8EF-706E-FE7B246BF350}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{D0F99B86-E5D5-6B7C-637F-B4D2CA00041C}</Project>
+      <Project>{530370AD-84A9-B142-7942-87A5A6405F97}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mobile.AndroidLogcat.Editor.csproj">
-      <Project>{CBFB3CDD-3CC1-7E92-CF3C-8370EEEA437B}</Project>
+      <Project>{BE332CB2-C864-3DCD-C324-46BE0F5051D5}</Project>
       <Name>Unity.Mobile.AndroidLogcat.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{72F2251B-25AE-019B-18E8-6BD7C2C158A3}</Project>
+      <Project>{78BFF193-20D5-099C-8C2D-D7FAC9245E83}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{815189DC-19CC-CD0F-455B-7103DF841FC6}</Project>
+      <Project>{E86FC549-738B-EDA7-97C3-298217BCE316}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{D254BC34-ADCF-BBB9-7BBE-73C54FC798D3}</Project>
+      <Project>{1C6FCD6D-01C9-92C4-1CC7-037A706E8E52}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{9941029F-D0EB-0BD7-938D-5F86EA8FA60C}</Project>
+      <Project>{10684AB1-3A5D-0E25-554E-78D2174282F2}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{43840DF8-4A69-26B8-20B9-B4614A628A6E}</Project>
+      <Project>{9AC46B0E-71C8-9567-1065-E60FA3F38E3A}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Notifications.Android.csproj">
-      <Project>{925EAEB3-C59F-4EEE-6CE2-4C3EB973E3F2}</Project>
+      <Project>{DAF733E3-AA1D-3D07-293D-75A5500E7217}</Project>
       <Name>Unity.Notifications.Android</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{AA9DF700-9A50-2A7B-8330-49B24531B55E}</Project>
+      <Project>{69E17CE5-481E-FBE6-FED6-CBCE948A6EDB}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Notifications.iOS.csproj">
-      <Project>{53184C50-4240-696F-34E0-D10A522FFF72}</Project>
+      <Project>{644A0B83-D824-BA28-89EC-078C3999626B}</Project>
       <Name>Unity.Notifications.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.csproj">
+      <Project>{66398F6D-459E-E2DF-9E14-5025F90DF4DC}</Project>
+      <Name>UnityEngine.Advertisements</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Monetization.csproj">
+      <Project>{9C60065B-8963-DAE9-22C0-C8FC6BB20125}</Project>
+      <Name>UnityEngine.Monetization</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.Editor.csproj">
+      <Project>{997FAFD9-F859-2C19-5985-52571FB8058E}</Project>
+      <Name>UnityEngine.Advertisements.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

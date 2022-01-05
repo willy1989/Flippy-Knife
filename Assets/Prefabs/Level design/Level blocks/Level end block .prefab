@@ -74,6 +74,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2615217093824640964, guid: d637dde4e79f087478b54e83c739b793,
+        type: 3}
+      propertyPath: multiplier
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218915206476795346, guid: d637dde4e79f087478b54e83c739b793,
+        type: 3}
+      propertyPath: m_Name
+      value: Bonus block 20X
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218915206476795349, guid: d637dde4e79f087478b54e83c739b793,
+        type: 3}
+      propertyPath: multiplier
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4218915207429171056, guid: d637dde4e79f087478b54e83c739b793,
         type: 3}
       propertyPath: m_RootOrder
@@ -133,6 +148,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bonus blocks
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399799188471765076, guid: d637dde4e79f087478b54e83c739b793,
+        type: 3}
+      propertyPath: multiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809737766065465904, guid: d637dde4e79f087478b54e83c739b793,
+        type: 3}
+      propertyPath: m_Name
+      value: Bonus block 8X
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d637dde4e79f087478b54e83c739b793, type: 3}
