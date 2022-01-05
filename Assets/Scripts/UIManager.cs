@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject shopUI;
     [SerializeField] private Text totalMoneyText;
     [SerializeField] private Text bonusMoneyEarned;
+    [SerializeField] private Button watchRewardAdButton;
 
     public static UIManager Instance;
 
@@ -50,11 +51,16 @@ public class UIManager : MonoBehaviour
 
     public void UpdateBonusMoneyEarned()
     {
-        bonusMoneyEarned.text = "+ "+(ScoreManager.Instance.BonusMultiplier * ScoreManager.Instance.CurrentScore).ToString();
+        bonusMoneyEarned.text = "+ "+(ScoreManager.Instance.CurrentScore).ToString();
     }
 
     public void UpdateTotalMoneyText()
     {
         totalMoneyText.text = ScoreManager.Instance.TotalMoney.ToString();
+    }
+
+    public void ToggleShowRewardAdButton(bool OnOff)
+    {
+        watchRewardAdButton.gameObject.SetActive(OnOff);
     }
 }

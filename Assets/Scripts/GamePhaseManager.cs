@@ -32,6 +32,8 @@ public class GamePhaseManager : MonoBehaviour
 
     private GameObject currentKnife;
 
+    private StabKnife stabKnife;
+
     private KnifeDeath knifeDeath;
 
     private KnifeMovement knifeMovement;
@@ -74,12 +76,13 @@ public class GamePhaseManager : MonoBehaviour
         UIManager.Instance.ToggleGameOverUI(OnOff: false);
         UIManager.Instance.ToggleLevelEndUI(OnOff: false);
         knifeMovement.ResetToStartPosition();
-        ScoreManager.Instance.ResetMoneyEarnedThisRound();
+        ScoreManager.Instance.AddCurrentScoreToTotalMoney();
+        ScoreManager.Instance.ResetCurrentScore();
         UIManager.Instance.UpdateTotalMoneyText();
         LevelBuilder.Instance.ResetLevelBuilder();
         LevelBuilder.Instance.CreateLevel();
         CameraManager.Instance.SwitchToStartCamera();
-
+        stabKnife.Reset();
         adsManager.ShowInterstitialAd();
     }
 
@@ -99,6 +102,7 @@ public class GamePhaseManager : MonoBehaviour
     public void ReachedLevelEnd()
     {
         UIManager.Instance.ToggleLevelEndUI(OnOff: true);
+        UIManager.Instance.ToggleShowRewardAdButton(OnOff: true);
         UIManager.Instance.UpdateBonusMoneyEarned();
         LevelBuilder.Instance.IncrementLevelUnlocked();
         CameraManager.Instance.SwitchToLevelEndCamera();
@@ -117,6 +121,7 @@ public class GamePhaseManager : MonoBehaviour
         levelEndCamera.Follow = currentKnife.transform;
         knifeMovement = currentKnife.GetComponent<KnifeMovement>();
         knifeDeath = currentKnife.GetComponentInChildren<KnifeDeath>();
+        stabKnife = currentKnife.GetComponentInChildren<StabKnife>();
         knifeMovement.SetUpSword();
         knifeMovement.DisableMovement();
         knifeDeath.DeathEvent += GameOver;

@@ -19,9 +19,9 @@ public class ScoreManager : MonoBehaviour
 
     public int CurrentScore { get; private set; }
 
-    public int BonusMultiplier { get; private set; }
-
     public static ScoreManager Instance;
+
+    
 
     private void Awake()
     {
@@ -46,15 +46,18 @@ public class ScoreManager : MonoBehaviour
         CurrentScore += points;
     }
 
-    public void AddBonusMoney(int multiplier)
+    public void AddCurrentScoreToTotalMoney()
     {
-        BonusMultiplier = multiplier;
-        TotalMoney += CurrentScore * BonusMultiplier;
+        TotalMoney += CurrentScore;
+    }
+
+    public void MutiplyCurrentScore(int multiplier)
+    {
+        CurrentScore *= multiplier;
     }
     
-    public void ResetMoneyEarnedThisRound()
+    public void ResetCurrentScore()
     {
-        BonusMultiplier = 0;
         CurrentScore = 0;
     }
 }
