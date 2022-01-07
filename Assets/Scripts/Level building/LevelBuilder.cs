@@ -9,6 +9,8 @@ public class LevelBuilder : MonoBehaviour
 
     [SerializeField] private GameObject BonusBlocks;
 
+    [SerializeField] private Pool[] levelBlockPools;
+
     private List<GameObject> availableBlockPrefabs = new List<GameObject>();
 
     private List<GameObject> blocksInGame = new List<GameObject>();
