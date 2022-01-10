@@ -15,7 +15,7 @@ public class StabKnife : MonoBehaviour
             knifeMovement.FreezeMovement();
             SoundManager.Instance.PlayStabSound();
         }
-            
+ 
         else if (other.CompareTag(Constants.BonusBlock_Tag) == true && bonusBlockHitThisRun == false)
         {
             knifeMovement.DisableMovement();
