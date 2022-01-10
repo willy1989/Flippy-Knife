@@ -67,8 +67,6 @@ public class LevelBuilder : MonoBehaviour
 
         currentBlockSpawnPosition = levelStartPosition;
 
-        //PlayerPrefs.SetFloat(Constants.LevelsUnlocked, 4f);
-
         SetAvailableLevelBlocks();
     }
 
