@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
 
-public class Pool : MonoBehaviour
+public class LevelBlockPool : MonoBehaviour
 {
     [SerializeField] private GameObject prefab;
 

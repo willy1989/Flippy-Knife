@@ -16,9 +16,9 @@ public class LevelBuilder : MonoBehaviour
     [SerializeField] private GameObject bonusBlocks;
 
 
-    [SerializeField] private Pool[] allLevelBlockPools;
+    [SerializeField] private LevelBlockPool[] allLevelBlockPools;
 
-    private List<Pool> availablePools = new List<Pool>();
+    private List<LevelBlockPool> availablePools = new List<LevelBlockPool>();
 
     private List<LevelBlocksData> blocksInGame = new List<LevelBlocksData>();
 

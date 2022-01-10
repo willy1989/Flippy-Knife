@@ -2193,7 +2193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 623852126}
   m_Layer: 0
-  m_Name: Pools
+  m_Name: Level block pools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7643,7 +7643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonusBlocks: {fileID: 1408566719}
-  levelBlockPools:
+  allLevelBlockPools:
   - {fileID: 426184950}
   - {fileID: 1389847429}
   - {fileID: 333860981}
