@@ -6,6 +6,8 @@ public class LevelBlocksData : MonoBehaviour
 {
     [SerializeField] private Transform blockEnd;
 
+    public Pool originPool;
+
     public Transform BlockEnd 
     { 
         get 

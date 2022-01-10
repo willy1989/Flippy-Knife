@@ -3,27 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Levels are procedurally generated.
+/// Each level is made of several blocks follwing each other.
+/// Blocks are randomly selected when building a level.
+/// Once a run is completed by the player, a new level is generated, and so forth and so on.
+/// A level always ends with a bonus block.
+/// </summary>
+
 public class LevelBuilder : MonoBehaviour
 {
-    [SerializeField] private GameObject[] AllBlockPrefabs;
-
-    [SerializeField] private GameObject BonusBlocks;
-
-    [SerializeField] private Pool[] levelBlockPools;
-
-    private List<GameObject> availableBlockPrefabs = new List<GameObject>();
-
-    private List<GameObject> blocksInGame = new List<GameObject>();
+    [SerializeField] private GameObject bonusBlocks;
 
 
+    [SerializeField] private Pool[] allLevelBlockPools;
 
-    private Vector3 levelStartPosition = Vector3.zero;
+    private List<Pool> availablePools = new List<Pool>();
 
-    private Vector3 currentBlockSpawnPosition;
+    private List<LevelBlocksData> blocksInGame = new List<LevelBlocksData>();
 
     private int levelBlockNumber = 4;
 
+
+    private Vector3 currentBlockSpawnPosition;
+
+    private Vector3 levelStartPosition = Vector3.zero;
+
     private Vector3 spaceBetweenBlocks = new Vector3(3f, 0f, 0f);
+
 
     public static LevelBuilder Instance;
 
@@ -36,7 +43,7 @@ public class LevelBuilder : MonoBehaviour
 
         set
         {
-            if(value <= AllBlockPrefabs.Length-1)
+            if(value <= allLevelBlockPools.Length-1)
                 PlayerPrefs.SetFloat(Constants.LevelsUnlocked, value);
         }
     }
@@ -65,9 +72,11 @@ public class LevelBuilder : MonoBehaviour
         SetAvailableLevelBlocks();
     }
 
+    // The blocks that make a level have to be unlocked(unlockedLevels).
+    // And the player unlocks them gradually the more, he or she plays.
     private void SetAvailableLevelBlocks()
     {
-        availableBlockPrefabs.Clear();
+        availablePools.Clear();
 
         if (unlockedLevels >= 6 && unlockedLevels < 10)
         {
@@ -81,7 +90,7 @@ public class LevelBuilder : MonoBehaviour
 
         for (int i = 0; i < unlockedLevels; i++)
         {
-            availableBlockPrefabs.Add(AllBlockPrefabs[i]);
+            availablePools.Add(allLevelBlockPools[i]);
         }
     }
 
@@ -89,33 +98,40 @@ public class LevelBuilder : MonoBehaviour
     {
         for(int i = 0; i < levelBlockNumber; i++)
         {
-            GameObject spawnedLevelBlock = Instantiate(GetRandomLevelBlock(), currentBlockSpawnPosition, Quaternion.identity);
+            GameObject spawnedLevelBlock = GetRandomLevelBlock();
 
-            blocksInGame.Add(spawnedLevelBlock);
+            spawnedLevelBlock.transform.position = currentBlockSpawnPosition;
 
-            currentBlockSpawnPosition = spawnedLevelBlock.GetComponent<LevelBlocksData>().BlockEnd.position + spaceBetweenBlocks;
+            LevelBlocksData levelBlockData = spawnedLevelBlock.GetComponent<LevelBlocksData>();
+
+            blocksInGame.Add(levelBlockData);
+
+            currentBlockSpawnPosition = levelBlockData.BlockEnd.position + spaceBetweenBlocks;
         }
 
-        GameObject spawnedBonusBlock = Instantiate(BonusBlocks, currentBlockSpawnPosition, Quaternion.identity);
-        blocksInGame.Add(spawnedBonusBlock);
+        bonusBlocks.SetActive(true);
+
+        bonusBlocks.transform.position = currentBlockSpawnPosition;
     }
 
     private GameObject GetRandomLevelBlock()
     {
-        int randomNumber = Random.Range(0, availableBlockPrefabs.Count);
+        int randomNumber = Random.Range(0, availablePools.Count);
 
-        GameObject randomBlock = availableBlockPrefabs[randomNumber];
+        GameObject randomBlock = availablePools[randomNumber].GetLevelBlock();
 
-        availableBlockPrefabs.RemoveAt(randomNumber);
+        availablePools.RemoveAt(randomNumber);
 
         return randomBlock;
     }
 
     public void ResetLevelBuilder()
     {
-        foreach(GameObject item in blocksInGame)
+        bonusBlocks.SetActive(false);
+
+        foreach (LevelBlocksData levelBlockData in blocksInGame)
         {
-            Destroy(item);
+            levelBlockData.originPool.ReleaseLevelBlock(levelBlockData.gameObject);
         }
 
         blocksInGame.Clear();
@@ -124,5 +140,4 @@ public class LevelBuilder : MonoBehaviour
 
         currentBlockSpawnPosition = levelStartPosition;
     }
-
 }

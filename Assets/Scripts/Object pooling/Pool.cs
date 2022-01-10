@@ -24,9 +24,21 @@ public class Pool : MonoBehaviour
         return objectPool.Get();
     }
 
+    public void ReleaseLevelBlock(GameObject levelBlock)
+    {
+        objectPool.Release(levelBlock);
+    }
+
     private GameObject InstantiateObject()
     {
         GameObject blockGameObject = Instantiate(prefab, Vector3.zero, Quaternion.identity);
+
+        LevelBlocksData levelBlocksData = blockGameObject.GetComponent<LevelBlocksData>();
+
+        if (levelBlocksData == null)
+            Debug.LogError("Block level prefabs should all have a levelBlocksData component. This one doesn't. Please add one.");
+
+        levelBlocksData.originPool = this;
 
         blockGameObject.SetActive(false);
 
