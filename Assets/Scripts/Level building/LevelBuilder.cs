@@ -11,7 +11,7 @@ using UnityEngine;
 /// A level always ends with a bonus block.
 /// </summary>
 
-public class LevelBuilder : MonoBehaviour
+public class LevelBuilder : Singleton<LevelBuilder>
 {
     [SerializeField] private GameObject bonusBlocks;
 
@@ -30,9 +30,6 @@ public class LevelBuilder : MonoBehaviour
     private Vector3 levelStartPosition = Vector3.zero;
 
     private Vector3 spaceBetweenBlocks = new Vector3(3f, 0f, 0f);
-
-
-    public static LevelBuilder Instance;
 
     private float unlockedLevels
     {
@@ -55,15 +52,7 @@ public class LevelBuilder : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-
-        else
-        {
-            Destroy(this);
-        }
+        base.Awake();
 
         currentBlockSpawnPosition = levelStartPosition;
 
