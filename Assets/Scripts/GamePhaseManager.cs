@@ -4,10 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GamePhaseManager : MonoBehaviour
+public class GamePhaseManager : Singleton<GamePhaseManager>
 {
-    public static GamePhaseManager Instance;
-
     [SerializeField] private AdsManager adsManager;
 
     [Header("Cameras")]
@@ -40,15 +38,7 @@ public class GamePhaseManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-            
-        else
-        {
-            Destroy(this);
-        }
+        SetInstance();
     }
 
     private void Start()
