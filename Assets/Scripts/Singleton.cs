@@ -6,11 +6,6 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     public static T Instance;
 
-    protected void Awake()
-    {
-        SetInstance();
-    }
-
     protected void SetInstance()
     {
         if (Instance == null)

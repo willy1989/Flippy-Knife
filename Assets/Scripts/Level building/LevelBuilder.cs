@@ -52,7 +52,7 @@ public class LevelBuilder : Singleton<LevelBuilder>
 
     private void Awake()
     {
-        base.Awake();
+        SetInstance();
 
         currentBlockSpawnPosition = levelStartPosition;
 

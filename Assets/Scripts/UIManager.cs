@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class UIManager : Singleton<UIManager>
 {
     [Header("UI elements")]
     [SerializeField] private GameObject startUI;
@@ -14,19 +14,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text bonusMoneyEarned;
     [SerializeField] private Button watchRewardAdButton;
 
-    public static UIManager Instance;
-
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-
-        else
-        {
-            Destroy(this);
-        }
+        SetInstance();
     }
 
     public void ToggleStartUI(bool OnOff)

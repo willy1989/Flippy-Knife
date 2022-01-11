@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : Singleton<SoundManager>
 {
-    public static SoundManager Instance;
-
     [SerializeField] private AudioSource winSound;
     [SerializeField] private AudioSource loseSound;
     [SerializeField] private AudioSource cutSound;
@@ -13,15 +11,7 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-
-        else
-        {
-            Destroy(this);
-        }
+        SetInstance();
     }
 
     public void PlayWinSound()
