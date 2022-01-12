@@ -10,6 +10,7 @@ public class Resettable_LevelBlockElement : Resettable
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider>();
+        boxCollider.enabled = true;
     }
 
     private void OnDisable()

@@ -24,22 +24,22 @@ public class Resettable_LevelBlockElementChildren : Resettable
 
     private void SetUp()
     {
+        rigidbody = GetComponent<Rigidbody>();
+
         originalPosition = transform.localPosition;
 
         originalRotation = transform.localRotation;
-
-        rigidbody = GetComponent<Rigidbody>();
     }
 
     protected override void ResetGameObject()
     {
-        transform.position = originalPosition;
-
-        transform.rotation = originalRotation;
-
-        rigidbody.isKinematic = false;
+        rigidbody.isKinematic = true;
 
         rigidbody.velocity = Vector3.zero;
+
+        transform.localPosition = originalPosition;
+
+        transform.localRotation = originalRotation;
     }
 }
 
