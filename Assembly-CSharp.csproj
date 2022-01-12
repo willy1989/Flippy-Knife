@@ -74,11 +74,11 @@
     <Compile Include="Assets\Scripts\Knife\CutKnife.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
+    <Compile Include="Assets\Scripts\IReset.cs" />
     <Compile Include="Assets\Scripts\Shop\ShopItemUI.cs" />
     <Compile Include="Assets\Scripts\Object pooling\LevelBlockPool.cs" />
     <Compile Include="Assets\Scripts\Shop\Shop.cs" />
     <Compile Include="Assets\Scripts\Knife\StabKnife.cs" />
-    <Compile Include="Assets\Scripts\IReset.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
