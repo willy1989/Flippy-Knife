@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7052634091667976121}
   - component: {fileID: 7044198505863279052}
   - component: {fileID: 4285743992525682053}
+  - component: {fileID: 5181066415053927402}
   m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -115,6 +116,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: 7ca0152827863e94987a0f7cb76ba33c, type: 3}
+--- !u!114 &5181066415053927402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944034565548261711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6875302224572218183
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +141,7 @@ GameObject:
   - component: {fileID: 8726159961781256619}
   - component: {fileID: 6397141047701894251}
   - component: {fileID: 4254956049358433125}
+  - component: {fileID: 5032188108256311424}
   m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
@@ -230,6 +244,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: 7ca0152827863e94987a0f7cb76ba33c, type: 3}
+--- !u!114 &5032188108256311424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6875302224572218183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7207990417363789504
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +267,7 @@ GameObject:
   - component: {fileID: 7207990417363789505}
   - component: {fileID: 7207990417363789511}
   - component: {fileID: 7207990417363789510}
+  - component: {fileID: 213610645688706520}
   m_Layer: 6
   m_Name: Cuttable ball
   m_TagString: Cuttable
@@ -288,5 +315,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c535c081d788f1b4a86aaeac1dbe9f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &213610645688706520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207990417363789504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb013fd1499846c4bb5f12be55cf948d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

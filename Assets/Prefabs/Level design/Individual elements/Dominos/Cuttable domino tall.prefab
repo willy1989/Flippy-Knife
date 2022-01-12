@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1705992964951100523}
   - component: {fileID: 1705992964951100522}
   - component: {fileID: 1705992964951100533}
+  - component: {fileID: 661150250941258441}
   m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
@@ -114,6 +115,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &661150250941258441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705992964951100535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1705992964980847815
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +140,7 @@ GameObject:
   - component: {fileID: 1705992964980847675}
   - component: {fileID: 1705992964980847674}
   - component: {fileID: 1705992964980847813}
+  - component: {fileID: 7176439649488429377}
   m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
@@ -228,6 +242,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7176439649488429377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705992964980847815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1705992965421241760
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +265,7 @@ GameObject:
   - component: {fileID: 1705992965421241761}
   - component: {fileID: 1705992965421241767}
   - component: {fileID: 1705992965421241766}
+  - component: {fileID: 7328026128218813949}
   m_Layer: 6
   m_Name: Cuttable domino tall
   m_TagString: Cuttable
@@ -286,5 +313,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c535c081d788f1b4a86aaeac1dbe9f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7328026128218813949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705992965421241760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb013fd1499846c4bb5f12be55cf948d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

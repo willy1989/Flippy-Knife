@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4144250789219548742}
   - component: {fileID: 4144250789219548743}
   - component: {fileID: 4144250789219548740}
+  - component: {fileID: 5352676001475996945}
   m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
@@ -114,6 +115,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5352676001475996945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4144250789219548738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4144250789242645877
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +138,7 @@ GameObject:
   - component: {fileID: 4144250789242645876}
   - component: {fileID: 4144250789242645878}
   - component: {fileID: 4144250789242645879}
+  - component: {fileID: 1782223015519521248}
   m_Layer: 6
   m_Name: Cuttable card (2)
   m_TagString: Cuttable
@@ -174,6 +188,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c535c081d788f1b4a86aaeac1dbe9f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1782223015519521248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4144250789242645877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb013fd1499846c4bb5f12be55cf948d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4144250789354729763
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,6 +213,7 @@ GameObject:
   - component: {fileID: 4144250789354729767}
   - component: {fileID: 4144250789354729764}
   - component: {fileID: 4144250789354729765}
+  - component: {fileID: 1292532688293770701}
   m_Layer: 6
   m_Name: Half block
   m_TagString: Untagged
@@ -288,6 +315,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1292532688293770701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4144250789354729763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4144250789469105806
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +374,7 @@ GameObject:
   - component: {fileID: 1542859187342406573}
   - component: {fileID: 342916675478144453}
   - component: {fileID: 1903413471983345676}
+  - component: {fileID: 6707933236229437720}
   m_Layer: 6
   m_Name: Pillar (1)
   m_TagString: Untagged
@@ -436,6 +476,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6707933236229437720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553727381662747479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9057163405000999630
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +501,7 @@ GameObject:
   - component: {fileID: 9057163405000999634}
   - component: {fileID: 9057163405000999635}
   - component: {fileID: 9057163405000999628}
+  - component: {fileID: 66529121628466974}
   m_Layer: 6
   m_Name: Pillar
   m_TagString: Untagged
@@ -550,3 +603,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &66529121628466974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9057163405000999630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

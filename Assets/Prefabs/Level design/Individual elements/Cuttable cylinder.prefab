@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2820306800657115533}
   - component: {fileID: 3793939317924146495}
   - component: {fileID: 3078595927068294214}
+  - component: {fileID: 4418335948439080569}
   m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
@@ -115,6 +116,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4418335948439080569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2813590676956832750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3732378473713709588
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +141,7 @@ GameObject:
   - component: {fileID: 8073239008809952574}
   - component: {fileID: 5015975075183076392}
   - component: {fileID: 8848685351451450724}
+  - component: {fileID: 8422659383052405369}
   m_Layer: 6
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -230,6 +244,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8422659383052405369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3732378473713709588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a80728878cc00349b9eeaace679af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6862981553888965292
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +267,7 @@ GameObject:
   - component: {fileID: 6862981553888965293}
   - component: {fileID: 6862981553888965291}
   - component: {fileID: 6862981553888965290}
+  - component: {fileID: 355187625074087523}
   m_Layer: 6
   m_Name: Cuttable cylinder
   m_TagString: Cuttable
@@ -288,5 +315,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c535c081d788f1b4a86aaeac1dbe9f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &355187625074087523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6862981553888965292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb013fd1499846c4bb5f12be55cf948d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
