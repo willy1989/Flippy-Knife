@@ -13,12 +13,7 @@ public class Resettable_LevelBlockElement : Resettable
         boxCollider.enabled = true;
     }
 
-    private void OnDisable()
-    {
-        ResetGameObject();
-    }
-
-    protected override void ResetGameObject()
+    public override void ResetGameObject()
     {
         boxCollider.enabled = true;
     }

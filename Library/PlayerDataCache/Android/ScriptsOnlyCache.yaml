@@ -10,9 +10,12 @@ ScriptsOnlyBuild:
     - InputManager
     - KnifeDeath
     - KnifeMovement
+    - LevelBlockPool
+    - LevelBlockResetter
     - LevelBlocksData
     - LevelBuilder
-    - Pool
+    - Resettable_LevelBlockElement
+    - Resettable_LevelBlockElementChildren
     - ScoreManager
     - Shop
     - ShopItem
@@ -102,61 +105,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2304}
     - Class: 114
-      Script: {instanceID: 2358}
+      Script: {instanceID: 2306}
     - Class: 114
-      Script: {instanceID: 2416}
+      Script: {instanceID: 2360}
     - Class: 114
-      Script: {instanceID: 2556}
+      Script: {instanceID: 2418}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2558}
     - Class: 114
-      Script: {instanceID: 2666}
+      Script: {instanceID: 2638}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2668}
     - Class: 114
-      Script: {instanceID: 2752}
+      Script: {instanceID: 2680}
     - Class: 114
-      Script: {instanceID: 2762}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 2846}
+      Script: {instanceID: 2826}
     - Class: 114
-      Script: {instanceID: 2934}
+      Script: {instanceID: 2838}
     - Class: 114
-      Script: {instanceID: 3064}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 3142}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 3220}
+      Script: {instanceID: 3068}
     - Class: 114
-      Script: {instanceID: 3288}
+      Script: {instanceID: 3146}
     - Class: 114
-      Script: {instanceID: 3402}
+      Script: {instanceID: 3224}
     - Class: 114
-      Script: {instanceID: 3710}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 3764}
+      Script: {instanceID: 3406}
     - Class: 114
-      Script: {instanceID: 4016}
+      Script: {instanceID: 3714}
     - Class: 114
-      Script: {instanceID: 4036}
+      Script: {instanceID: 3768}
     - Class: 114
-      Script: {instanceID: 4156}
+      Script: {instanceID: 4022}
     - Class: 114
-      Script: {instanceID: 4268}
+      Script: {instanceID: 4042}
     - Class: 114
-      Script: {instanceID: 4472}
+      Script: {instanceID: 4162}
     - Class: 114
-      Script: {instanceID: 4616}
+      Script: {instanceID: 4274}
     - Class: 114
-      Script: {instanceID: 4702}
+      Script: {instanceID: 4478}
     - Class: 114
-      Script: {instanceID: 4848}
+      Script: {instanceID: 4622}
     - Class: 114
-      Script: {instanceID: 4882}
+      Script: {instanceID: 4708}
     - Class: 114
-      Script: {instanceID: 4900}
+      Script: {instanceID: 4854}
+    - Class: 114
+      Script: {instanceID: 4890}
+    - Class: 114
+      Script: {instanceID: 4908}
+    - Class: 114
+      Script: {instanceID: 30992}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -286,7 +295,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 5c96f2fecd1b0f8f3c357f158d9f12c4
+      Hash: 77d2e8104c46c18282db3f1df39f1a56
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelBuilder
@@ -350,6 +359,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Resettable_LevelBlockElement
   - hash:
       serializedVersion: 2
       Hash: 1e04f5dab997c8ba44d0ed4001f09f08
@@ -430,7 +445,7 @@ ScriptsOnlyBuild:
     className: CinemachineConfiner2D
   - hash:
       serializedVersion: 2
-      Hash: 02056181c76e65227e52be8e3da2cb29
+      Hash: b0c16163d3f9d3a8fab9180a70ccb535
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelBlocksData
@@ -452,6 +467,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Resettable_LevelBlockElementChildren
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -973,7 +994,7 @@ ScriptsOnlyBuild:
       Hash: 220bd265f54cc4cee8f1539ad2b2c64a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Pool
+    className: LevelBlockPool
   - hash:
       serializedVersion: 2
       Hash: 42eb04af3a02cb73519818dc2d9ce51c
@@ -1064,6 +1085,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBlendListCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelBlockResetter
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

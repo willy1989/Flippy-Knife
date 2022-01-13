@@ -14,16 +14,6 @@ public class Resettable_LevelBlockElementChildren : Resettable
 
     private void Awake()
     {
-        SetUp();
-    }
-
-    private void OnDisable()
-    {
-        ResetGameObject();
-    }
-
-    private void SetUp()
-    {
         rigidbody = GetComponent<Rigidbody>();
 
         originalPosition = transform.localPosition;
@@ -31,7 +21,7 @@ public class Resettable_LevelBlockElementChildren : Resettable
         originalRotation = transform.localRotation;
     }
 
-    protected override void ResetGameObject()
+    public override void ResetGameObject()
     {
         rigidbody.isKinematic = true;
 

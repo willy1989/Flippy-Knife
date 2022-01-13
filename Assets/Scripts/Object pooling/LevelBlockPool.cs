@@ -50,6 +50,8 @@ public class LevelBlockPool : MonoBehaviour
 
     private void DisableGameObject(GameObject blockGameObject)
     {
+        blockGameObject.GetComponent<LevelBlockResetter>().ResetChildrenLevelBlocks();
+
         blockGameObject.SetActive(false);
     }
 

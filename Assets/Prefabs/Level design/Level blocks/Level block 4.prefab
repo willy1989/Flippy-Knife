@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390201748128452011}
   - component: {fileID: 1890376761114593318}
+  - component: {fileID: 2054484308512714877}
   m_Layer: 0
   m_Name: Level block 4
   m_TagString: Untagged
@@ -80,6 +81,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockEnd: {fileID: 6732903473781137392}
   originPool: {fileID: 0}
+--- !u!114 &2054484308512714877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8309799004761514288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1623b772e07d7ce439174a1160688252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &126990185457747826
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -80,6 +80,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4539406542239398582}
   - component: {fileID: 207408367341246199}
+  - component: {fileID: -3606636810073349221}
   m_Layer: 0
   m_Name: Level block 2
   m_TagString: Untagged
@@ -119,7 +120,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockEnd: {fileID: 1447399799519189765}
-  objectPoolId: 1
+  originPool: {fileID: 0}
+--- !u!114 &-3606636810073349221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5244202578456729133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1623b772e07d7ce439174a1160688252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &276185645316097965
 PrefabInstance:
   m_ObjectHideFlags: 0
