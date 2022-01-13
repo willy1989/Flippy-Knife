@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8526995357517481338}
   - component: {fileID: 8931278119605567749}
+  - component: {fileID: -199160118702305916}
   m_Layer: 0
   m_Name: Level block 10
   m_TagString: Untagged
@@ -48,7 +49,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockEnd: {fileID: 600687062846704642}
-  objectPoolId: 9
+  originPool: {fileID: 0}
+--- !u!114 &-199160118702305916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30937367840205281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1623b772e07d7ce439174a1160688252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7820233422993107982
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +118,7 @@ PrefabInstance:
     - target: {fileID: 4144250789469105841, guid: a9453c3e0002281478b8a523ec91cb7f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.71
+      value: 0.395
       objectReference: {fileID: 0}
     - target: {fileID: 4144250789469105841, guid: a9453c3e0002281478b8a523ec91cb7f,
         type: 3}

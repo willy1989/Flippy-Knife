@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8526995357517481338}
   - component: {fileID: 8931278119605567749}
+  - component: {fileID: -3570282521216460270}
   m_Layer: 0
   m_Name: Level block 8
   m_TagString: Untagged
@@ -52,7 +53,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockEnd: {fileID: 600687062846704642}
-  objectPoolId: 7
+  originPool: {fileID: 0}
+--- !u!114 &-3570282521216460270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30937367840205281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1623b772e07d7ce439174a1160688252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &772850652742925389
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772850652742925389}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: -1.44, z: 0}
+  m_LocalPosition: {x: -1.25, y: 1.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -113,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2348135978980636449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0.71000004, z: 0}
+  m_LocalPosition: {x: 3.5, y: 1.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
