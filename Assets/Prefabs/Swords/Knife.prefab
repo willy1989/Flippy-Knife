@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeMovement: {fileID: 2841620610598949065}
-  kniveAnimator: {fileID: 2841620610598949068}
+  kniveAnimator: {fileID: 6338879328288213012}
 --- !u!65 &4963802465451047053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -215,6 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841620610598949067}
   - component: {fileID: 2841620610598949065}
+  - component: {fileID: 6338879328288213012}
   - component: {fileID: 2841620610598949064}
   - component: {fileID: 2841620610598949078}
   - component: {fileID: 2841620610598949068}
@@ -259,9 +260,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612b1314682890b4e9a2595406946267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kniveAnimator: {fileID: 2841620610598949068}
   movementForceVector: {x: 250, y: 350, z: 0}
-  rotationSpeed: 2
+--- !u!114 &6338879328288213012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2841620610598949071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81bff9e926117fd46a6e67f62744be0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &2841620610598949064
 Rigidbody:
   m_ObjectHideFlags: 0

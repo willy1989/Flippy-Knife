@@ -1,16 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class KnifeMovement : MonoBehaviour
 {
-    [SerializeField] private Animator kniveAnimator;
-
-    [Header("Sword stat")]
+    private KnifeAnimator knifeAnimator;
 
     [SerializeField] private Vector3 movementForceVector;
-
-    [SerializeField] private float rotationSpeed;
 
     private Rigidbody rigidBody;
 
@@ -23,9 +20,9 @@ public class KnifeMovement : MonoBehaviour
 
     public void SetUpSword()
     {
+        knifeAnimator = GetComponent<KnifeAnimator>();
         startPosition = transform.position;
         startRotation = transform.rotation;
-        kniveAnimator.speed = rotationSpeed;
         rigidBody = GetComponent<Rigidbody>();
         InputManager.Instance.ActionButtonPressedEvent += PrepareForJump;
     }
@@ -49,7 +46,7 @@ public class KnifeMovement : MonoBehaviour
         if (rigidBody.constraints == RigidbodyConstraints.FreezeAll)
             UnFreezeMovement();
 
-        kniveAnimator.SetTrigger(Constants.KnifeSlice_Trigger);
+        knifeAnimator.PlaySliceAnimation();
         rigidBody.velocity = Vector3.zero;
         rigidBody.AddForce(movementForceVector);
         SoundManager.Instance.PlayJumpSound();
@@ -59,7 +56,7 @@ public class KnifeMovement : MonoBehaviour
     {
         rigidBody.velocity = Vector3.zero;
         rigidBody.constraints = RigidbodyConstraints.FreezeAll;
-        kniveAnimator.speed = 0;
+        knifeAnimator.DisableAnimation();
     }
 
     private void UnFreezeMovement()
@@ -67,7 +64,7 @@ public class KnifeMovement : MonoBehaviour
         rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
                                 RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 
-        kniveAnimator.speed = rotationSpeed;
+        knifeAnimator.EnableAnimation();
     }
 
     public void DisableMovement()
@@ -84,7 +81,7 @@ public class KnifeMovement : MonoBehaviour
 
     public void ResetToStartPosition()
     {
-        kniveAnimator.Play("Knife blade idle");
+        knifeAnimator.PlayIdleAnimation();
         transform.position = startPosition;
         transform.rotation = startRotation;
     }

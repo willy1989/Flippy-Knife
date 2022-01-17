@@ -6,7 +6,7 @@ public class StabKnife : MonoBehaviour
 {
     [SerializeField] private KnifeMovement knifeMovement;
 
-    [SerializeField] private Animator kniveAnimator;
+    [SerializeField] private KnifeAnimator kniveAnimator;
 
     private bool bonusBlockHitThisRun = false;
 
@@ -53,7 +53,7 @@ public class StabKnife : MonoBehaviour
     {
         foreach (Collider collider in colliders)
         {
-            collider.enabled = !kniveAnimator.GetCurrentAnimatorStateInfo(0).IsName(Constants.BladeSlice_AnimationState);
+            collider.enabled = !kniveAnimator.SliceAnimationOnGoing;
         }
     }
 

@@ -16,9 +16,12 @@ public static class Constants
 
     // Animation
     public const string KnifeSlice_Trigger = "Slice";
+
+    public const string BladeIdle_AnimationState = "Blade idle state";
+
+    public const string BladeSlice_AnimationState = "Blade slice state";
+
     public const string FollowCamera_State = "Follow camera";
     public const string StartCamera_State = "Start camera";
     public const string LevelEndCamera_State = "End camera";
-
-    public const string BladeSlice_AnimationState = "Blade slice animation";
 }
