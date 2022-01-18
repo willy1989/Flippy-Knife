@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Level building\LevelBlocksData.cs" />
     <Compile Include="Assets\Scripts\Resettables\Resettable_LevelBlockElementChildren.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\KnifeAnimator.cs" />
     <Compile Include="Assets\Scripts\Cuttable.cs" />
     <Compile Include="Assets\Scripts\Shop\ScoreManager.cs" />
     <Compile Include="Assets\GameManager.cs" />
@@ -79,7 +80,7 @@
     <Compile Include="Assets\Scripts\Resettables\Resettable.cs" />
     <Compile Include="Assets\Scripts\Shop\Shop.cs" />
     <Compile Include="Assets\Scripts\Knife\StabKnife.cs" />
-    <Compile Include="Assets\Scripts\KnifeAnimator.cs" />
+    <Compile Include="Assets\Scripts\Knife\HitBonusBlock.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

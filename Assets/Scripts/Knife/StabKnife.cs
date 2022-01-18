@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class StabKnife : MonoBehaviour
 {
-    [SerializeField] private KnifeMovement knifeMovement;
+    private KnifeMovement knifeMovement;
 
-    [SerializeField] private KnifeAnimator kniveAnimator;
-
-    private bool bonusBlockHitThisRun = false;
+    private KnifeAnimator kniveAnimator;
 
     private Collider[] colliders;
 
     private void Awake()
     {
         colliders = GetComponents<Collider>();
+        knifeMovement = GetComponentInParent<KnifeMovement>();
+        kniveAnimator = GetComponentInParent<KnifeAnimator>();
     }
 
     private void Update()
@@ -28,15 +28,6 @@ public class StabKnife : MonoBehaviour
         {
             knifeMovement.FreezeMovement();
             SoundManager.Instance.PlayStabSound();
-        }
- 
-        else if (other.CompareTag(Constants.BonusBlock_Tag) == true && bonusBlockHitThisRun == false)
-        {
-            knifeMovement.DisableMovement();
-            ScoreManager.Instance.MutiplyCurrentScore(other.GetComponent<BonusBlock>().Multiplier);
-            GamePhaseManager.Instance.ReachedLevelEnd();
-            SoundManager.Instance.PlayWinSound();
-            bonusBlockHitThisRun = true;
         }
     }
 
@@ -55,10 +46,5 @@ public class StabKnife : MonoBehaviour
         {
             collider.enabled = !kniveAnimator.SliceAnimationOnGoing;
         }
-    }
-
-    public void Reset()
-    {
-        bonusBlockHitThisRun = false;
     }
 }

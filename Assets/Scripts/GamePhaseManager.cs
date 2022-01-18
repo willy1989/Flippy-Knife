@@ -32,6 +32,8 @@ public class GamePhaseManager : Singleton<GamePhaseManager>
 
     private StabKnife stabKnife;
 
+    private HitBonusBlock hitBonusBlock;
+
     private KnifeDeath knifeDeath;
 
     private KnifeMovement knifeMovement;
@@ -72,7 +74,7 @@ public class GamePhaseManager : Singleton<GamePhaseManager>
         LevelBuilder.Instance.ResetLevelBuilder();
         LevelBuilder.Instance.CreateLevel();
         CameraManager.Instance.SwitchToStartCamera();
-        stabKnife.Reset();
+        hitBonusBlock.Reset();
         adsManager.ShowInterstitialAd();
     }
 
@@ -112,6 +114,7 @@ public class GamePhaseManager : Singleton<GamePhaseManager>
         knifeMovement = currentKnife.GetComponent<KnifeMovement>();
         knifeDeath = currentKnife.GetComponentInChildren<KnifeDeath>();
         stabKnife = currentKnife.GetComponentInChildren<StabKnife>();
+        hitBonusBlock = currentKnife.GetComponentInChildren<HitBonusBlock>();
         knifeMovement.SetUpSword();
         knifeMovement.DisableMovement();
         knifeDeath.DeathEvent += GameOver;
