@@ -54,7 +54,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Knife blade idle
+  m_Name: Blade idle state
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -82,7 +82,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Blade slice animation
+  m_Name: Blade slice state
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -164,7 +164,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1139265362484274757}
-    m_Position: {x: 350, y: 220, z: 0}
+    m_Position: {x: 350, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1990583565982008894}
     m_Position: {x: 350, y: 60, z: 0}
