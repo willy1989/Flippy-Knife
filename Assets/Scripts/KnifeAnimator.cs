@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class KnifeAnimator : MonoBehaviour
 {
-    private Animator animator;
-
     [SerializeField] private float animationSpeed = 2;
+
+    private Animator animator;
 
     public bool SliceAnimationOnGoing 
     {

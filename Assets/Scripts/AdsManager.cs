@@ -9,7 +9,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 {
     [SerializeField] private Button watchRewardAdButton;
 
-    private bool testMode = true;
+    private bool testMode = false;
 
     private const string gameId = "4542369";
 

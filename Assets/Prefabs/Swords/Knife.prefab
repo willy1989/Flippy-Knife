@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleSystem: {fileID: 1668440008254250861}
+  knifeMovement: {fileID: 2841620610598949065}
 --- !u!65 &2841620610471796075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -213,10 +214,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2841620610598949067}
   - component: {fileID: 2841620610598949065}
-  - component: {fileID: 6338879328288213012}
   - component: {fileID: 2841620610598949064}
   - component: {fileID: 2841620610598949078}
-  - component: {fileID: 2841620610598949068}
   - component: {fileID: 1668440008254250861}
   - component: {fileID: 4259814028156953112}
   m_Layer: 3
@@ -234,7 +233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2841620610598949071}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -5.92, y: 1.72, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.31, y: 0.63, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -260,19 +259,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementForceVector: {x: 250, y: 350, z: 0}
---- !u!114 &6338879328288213012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2841620610598949071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81bff9e926117fd46a6e67f62744be0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationSpeed: 2
+  torqueImpulse: {x: 0, y: 0, z: -50}
+  baseTorque: {x: 0, y: 0, z: -0.4}
 --- !u!54 &2841620610598949064
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -283,11 +271,11 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 1
-  m_AngularDrag: 0.2
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!135 &2841620610598949078
 SphereCollider:
@@ -302,26 +290,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.38376218
   m_Center: {x: -6.008642e-16, y: 0.11, z: 0}
---- !u!95 &2841620610598949068
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2841620610598949071}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: da4f440f9f8475c4e84cf049f0ea1701, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!198 &1668440008254250861
 ParticleSystem:
   m_ObjectHideFlags: 0

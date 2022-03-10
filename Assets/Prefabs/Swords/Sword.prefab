@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementForceVector: {x: 300, y: 300, z: 0}
+  torque: {x: 0, y: 0, z: 0}
 --- !u!114 &2868667247483776603
 MonoBehaviour:
   m_ObjectHideFlags: 0
