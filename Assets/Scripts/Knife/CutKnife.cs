@@ -7,6 +7,8 @@ public class CutKnife : MonoBehaviour
 {
     [SerializeField] new ParticleSystem particleSystem;
 
+    private int cutsInRowCount = 0;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(Constants.Cuttable_Tag) == true)

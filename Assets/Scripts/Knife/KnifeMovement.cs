@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class KnifeMovement : MonoBehaviour
 {
-    [SerializeField] private Vector3 movementForceVector;
+    [SerializeField] private Vector3 movementForce;
+
+    [SerializeField] private Vector3 pushBackForce;
 
     [SerializeField] private Vector3 torqueImpulse;
 
@@ -29,6 +31,8 @@ public class KnifeMovement : MonoBehaviour
 
     private float autoTorqueCurrentCountDown;
 
+    private bool pushBackReady = false;
+
     private Vector3 startPosition;
     private Quaternion startRotation;
 
@@ -46,6 +50,12 @@ public class KnifeMovement : MonoBehaviour
     {
         if (movementAllowed == false)
             return;
+
+        if(pushBackReady == true)
+        {
+            PushBack();
+            return;
+        }
 
         if(readyToMove == true)
         {
@@ -87,7 +97,7 @@ public class KnifeMovement : MonoBehaviour
             UnFreezeMovement();
 
         rigidBody.velocity = Vector3.zero;
-        rigidBody.AddForce(movementForceVector);
+        rigidBody.AddForce(movementForce);
         SoundManager.Instance.PlayJumpSound();
     }
 
@@ -109,6 +119,22 @@ public class KnifeMovement : MonoBehaviour
             Rotate();
             autoTorqueCurrentCountDown = autoTorqueCountDownShortDuration;
         }
+    }
+
+    public void PreparePushBack()
+    {
+        pushBackReady = true;
+    }
+
+    private void PushBack()
+    {
+        rigidBody.velocity = Vector3.zero;
+
+        rigidBody.angularDrag = 2;
+
+        rigidBody.AddForce(pushBackForce);
+
+        pushBackReady = false;
     }
 
     public void FreezeMovement()
