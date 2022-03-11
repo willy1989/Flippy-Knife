@@ -33,6 +33,10 @@ public class KnifeMovement : MonoBehaviour
 
     private bool pushBackReady = false;
 
+    private float baseAngularDrag = 2f;
+
+    private float increaseAngularDrag = 6.5f;
+
     private Vector3 startPosition;
     private Quaternion startRotation;
 
@@ -42,6 +46,7 @@ public class KnifeMovement : MonoBehaviour
         startRotation = transform.rotation;
         rigidBody = GetComponent<Rigidbody>();
         rigidBody.maxAngularVelocity = maxAngularVelocity;
+        rigidBody.angularDrag = baseAngularDrag;
         autoTorqueCurrentCountDown = autoTorqueCountDownLongDuration;
         InputManager.Instance.ActionButtonPressedEvent += PrepareForJump;
     }
@@ -70,12 +75,12 @@ public class KnifeMovement : MonoBehaviour
             transform.localRotation.eulerAngles.z < 300 &&
             jumpCurrentCountDown <= 0)
         {
-            rigidBody.angularDrag = 5;
+            rigidBody.angularDrag = increaseAngularDrag;
         }
             
         else
         {
-            rigidBody.angularDrag = 2;
+            rigidBody.angularDrag = baseAngularDrag;
         }
 
         BaseTorque();
@@ -97,18 +102,18 @@ public class KnifeMovement : MonoBehaviour
             UnFreezeMovement();
 
         rigidBody.velocity = Vector3.zero;
-        rigidBody.AddForce(movementForce);
+        rigidBody.AddForce(movementForce * Time.fixedDeltaTime);
         SoundManager.Instance.PlayJumpSound();
     }
 
     private void Rotate()
     {
-            rigidBody.AddTorque(torqueImpulse, ForceMode.Force);
+            rigidBody.AddTorque(torqueImpulse * Time.fixedDeltaTime, ForceMode.Force);
     }
 
     private void BaseTorque()
     {
-            rigidBody.AddTorque(baseTorque, ForceMode.Force);
+            rigidBody.AddTorque(baseTorque * Time.fixedDeltaTime, ForceMode.Force);
     }
 
     private void AutoTorque()
@@ -130,9 +135,9 @@ public class KnifeMovement : MonoBehaviour
     {
         rigidBody.velocity = Vector3.zero;
 
-        rigidBody.angularDrag = 2;
+        rigidBody.angularDrag = baseAngularDrag;
 
-        rigidBody.AddForce(pushBackForce);
+        rigidBody.AddForce(pushBackForce * Time.fixedDeltaTime);
 
         pushBackReady = false;
     }
