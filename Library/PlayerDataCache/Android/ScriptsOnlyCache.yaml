@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - HitBonusBlock
     - InputManager
     - KnifeAnimator
+    - KnifeContactCollider
     - KnifeDeath
     - KnifeMovement
     - LevelBlockPool
@@ -120,45 +121,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1986}
     - Class: 114
-      Script: {instanceID: 2242}
+      Script: {instanceID: 2240}
+    - Class: 114
+      Script: {instanceID: 2312}
     - Class: 114
       Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2316}
+      Script: {instanceID: 2368}
     - Class: 114
-      Script: {instanceID: 2370}
+      Script: {instanceID: 2426}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2566}
     - Class: 114
-      Script: {instanceID: 2568}
+      Script: {instanceID: 2628}
     - Class: 114
-      Script: {instanceID: 2630}
+      Script: {instanceID: 2648}
     - Class: 114
-      Script: {instanceID: 2650}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2762}
     - Class: 114
-      Script: {instanceID: 2764}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 2848}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 2948}
+      Script: {instanceID: 2956}
     - Class: 114
-      Script: {instanceID: 2958}
+      Script: {instanceID: 3154}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3232}
     - Class: 114
-      Script: {instanceID: 3234}
+      Script: {instanceID: 3300}
     - Class: 114
-      Script: {instanceID: 3302}
+      Script: {instanceID: 3414}
     - Class: 114
-      Script: {instanceID: 3416}
+      Script: {instanceID: 3684}
     - Class: 114
       Script: {instanceID: 3724}
     - Class: 114
@@ -170,21 +173,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4172}
     - Class: 114
-      Script: {instanceID: 4286}
+      Script: {instanceID: 4284}
     - Class: 114
-      Script: {instanceID: 4490}
+      Script: {instanceID: 4488}
     - Class: 114
-      Script: {instanceID: 4634}
+      Script: {instanceID: 4632}
     - Class: 114
-      Script: {instanceID: 4720}
+      Script: {instanceID: 4718}
     - Class: 114
-      Script: {instanceID: 4866}
+      Script: {instanceID: 4864}
     - Class: 114
-      Script: {instanceID: 4902}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 4920}
+      Script: {instanceID: 4918}
     - Class: 114
-      Script: {instanceID: 33622}
+      Script: {instanceID: 43604}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -728,6 +731,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: dcdb1953b87c25363a3b035c9b92a7f4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PushBack
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1040,7 +1049,7 @@ ScriptsOnlyBuild:
     className: Shop
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 4bc1e7769321691cfb8ee501e1c783e9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StabKnife
@@ -1124,10 +1133,10 @@ ScriptsOnlyBuild:
     className: CinemachineBlendListCamera
   - hash:
       serializedVersion: 2
-      Hash: dcdb1953b87c25363a3b035c9b92a7f4
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PushBack
+    className: KnifeContactCollider
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

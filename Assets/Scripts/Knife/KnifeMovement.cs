@@ -35,7 +35,7 @@ public class KnifeMovement : MonoBehaviour
 
     private float baseAngularDrag = 2f;
 
-    private float increaseAngularDrag = 6.5f;
+    private float increasedAngularDrag = 10f;
 
     private Vector3 startPosition;
     private Quaternion startRotation;
@@ -71,11 +71,11 @@ public class KnifeMovement : MonoBehaviour
             readyToMove = false;
         }
 
-        if (transform.localRotation.eulerAngles.z > 200 && 
+        if (transform.localRotation.eulerAngles.z > 250 && 
             transform.localRotation.eulerAngles.z < 300 &&
             jumpCurrentCountDown <= 0)
         {
-            rigidBody.angularDrag = increaseAngularDrag;
+            rigidBody.angularDrag = increasedAngularDrag;
         }
             
         else
