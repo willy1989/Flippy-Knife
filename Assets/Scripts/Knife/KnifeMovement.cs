@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class KnifeMovement : MonoBehaviour
 {
+    [SerializeField] private CutKnife cutKnife;
+
     [SerializeField] private Vector3 movementForce;
 
     [SerializeField] private Vector3 pushBackForce;
@@ -21,11 +23,11 @@ public class KnifeMovement : MonoBehaviour
 
     private bool movementAllowed = false;
 
-    private float autoTorqueCountDownShortDuration = 1f;
+    private float autoTorqueCountDownShortDuration = 2f;
 
-    private float autoTorqueCountDownLongDuration = 2f;
+    private float autoTorqueCountDownLongDuration = 4f;
 
-    private float jumpCountDownDuration = 0.5f;
+    private float jumpCountDownDuration = 0.75f;
 
     private float jumpCurrentCountDown;
 
@@ -35,7 +37,7 @@ public class KnifeMovement : MonoBehaviour
 
     private float baseAngularDrag = 2f;
 
-    private float increasedAngularDrag = 10f;
+    private float increasedAngularDrag = 15f;
 
     private Vector3 startPosition;
     private Quaternion startRotation;
@@ -56,7 +58,12 @@ public class KnifeMovement : MonoBehaviour
         if (movementAllowed == false)
             return;
 
-        if(pushBackReady == true)
+        if (cutKnife.CutInARow == true)
+        {
+            return;
+        }  
+
+        if (pushBackReady == true)
         {
             PushBack();
             return;
@@ -72,7 +79,7 @@ public class KnifeMovement : MonoBehaviour
         }
 
         if (transform.localRotation.eulerAngles.z > 250 && 
-            transform.localRotation.eulerAngles.z < 300 &&
+            transform.localRotation.eulerAngles.z < 275 &&
             jumpCurrentCountDown <= 0)
         {
             rigidBody.angularDrag = increasedAngularDrag;

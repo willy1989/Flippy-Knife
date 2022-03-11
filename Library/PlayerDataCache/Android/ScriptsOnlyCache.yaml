@@ -117,77 +117,77 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 1806}
     - Class: 114
-      Script: {instanceID: 1986}
+      Script: {instanceID: 1896}
     - Class: 114
-      Script: {instanceID: 2240}
+      Script: {instanceID: 1988}
     - Class: 114
-      Script: {instanceID: 2312}
+      Script: {instanceID: 2242}
     - Class: 114
       Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2368}
+      Script: {instanceID: 2316}
     - Class: 114
-      Script: {instanceID: 2426}
+      Script: {instanceID: 2370}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2628}
+      Script: {instanceID: 2568}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2630}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 2762}
+      Script: {instanceID: 2680}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2846}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2848}
     - Class: 114
-      Script: {instanceID: 2946}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 2956}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 3154}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 3232}
+      Script: {instanceID: 3156}
     - Class: 114
-      Script: {instanceID: 3300}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3414}
+      Script: {instanceID: 3302}
     - Class: 114
-      Script: {instanceID: 3684}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3724}
+      Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 3778}
+      Script: {instanceID: 3726}
     - Class: 114
-      Script: {instanceID: 4032}
+      Script: {instanceID: 3780}
     - Class: 114
-      Script: {instanceID: 4052}
+      Script: {instanceID: 4034}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 4054}
     - Class: 114
-      Script: {instanceID: 4284}
+      Script: {instanceID: 4174}
     - Class: 114
-      Script: {instanceID: 4488}
+      Script: {instanceID: 4286}
     - Class: 114
-      Script: {instanceID: 4632}
+      Script: {instanceID: 4490}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4634}
     - Class: 114
-      Script: {instanceID: 4864}
+      Script: {instanceID: 4720}
     - Class: 114
-      Script: {instanceID: 4900}
+      Script: {instanceID: 4866}
     - Class: 114
-      Script: {instanceID: 4918}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 43604}
+      Script: {instanceID: 4920}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -297,6 +297,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KnifeContactCollider
   - hash:
       serializedVersion: 2
       Hash: f24c4c994f99c3f136c292096f97d3a2
@@ -845,7 +851,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: e94388451e35733340652b588eb8374a
+      Hash: 2b9c36e912b9eb40f117a0430f74fd4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: KnifeMovement
@@ -881,7 +887,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: b7d5aa9ca6ea5707502c66107bea0050
+      Hash: a66d1b4bfc65310fcc4a4d27b26def35
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CutKnife
@@ -1131,12 +1137,6 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBlendListCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: KnifeContactCollider
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

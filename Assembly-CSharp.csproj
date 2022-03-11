@@ -53,6 +53,7 @@
     <UnityVersion>2021.2.7f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Knife\KnifeContactCollider.cs" />
     <Compile Include="Assets\Scripts\Level building\LevelBuilder.cs" />
     <Compile Include="Assets\Scripts\Knife\HitBonusBlock.cs" />
     <Compile Include="Assets\Scripts\Resettables\Resettable_LevelBlockElement.cs" />
@@ -82,7 +83,7 @@
     <Compile Include="Assets\Scripts\Resettables\Resettable.cs" />
     <Compile Include="Assets\Scripts\Shop\Shop.cs" />
     <Compile Include="Assets\Scripts\Knife\StabKnife.cs" />
-    <Compile Include="Assets\Scripts\Knife\KnifeContactCollider.cs" />
+    <Compile Include="Assets\Scripts\Knife\KniveTrail.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
