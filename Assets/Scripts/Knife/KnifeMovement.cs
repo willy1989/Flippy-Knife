@@ -154,7 +154,6 @@ public class KnifeMovement : MonoBehaviour
         rigidBody.velocity = Vector3.zero;
         rigidBody.constraints = RigidbodyConstraints.FreezeAll;
     }
-
     private void UnFreezeMovement()
     {
         rigidBody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |

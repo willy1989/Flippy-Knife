@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed421a93108a324a84c4e5380c04d18, type: 3}
   m_Name: Dual blade
   m_EditorClassIdentifier: 
-  Sword: {fileID: 2841620610598949071, guid: 2f438903734d22e41bb0723aba44bdc2, type: 3}
+  Sword: {fileID: 2841620610598949071, guid: 45a6333de8a5ca544ae7928c302479e8, type: 3}
   Name: Dual blade
   Price: 20000
   Unlocked: 0

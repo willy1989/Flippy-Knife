@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed421a93108a324a84c4e5380c04d18, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  Sword: {fileID: 2841620610598949071, guid: b51bc5b6943928640a0abacfe04ad4a0, type: 3}
+  Sword: {fileID: 2841620610598949071, guid: 1320e80739ecb444b9404ffca5c27acb, type: 3}
   Name: Axe
   Price: 1000
-  Unlocked: 0
+  Unlocked: 1

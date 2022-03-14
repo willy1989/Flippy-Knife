@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed421a93108a324a84c4e5380c04d18, type: 3}
   m_Name: Katana
   m_EditorClassIdentifier: 
-  Sword: {fileID: 2841620610598949071, guid: f2197a5008124544492659c6e84f93e9, type: 3}
+  Sword: {fileID: 2841620610598949071, guid: 3ab439fdc8789fa4cb00ed76d1a1e675, type: 3}
   Name: Katana
   Price: 10000
-  Unlocked: 0
+  Unlocked: 1
