@@ -4,47 +4,34 @@ using UnityEngine;
 
 public class StabKnife : MonoBehaviour
 {
+    [SerializeField] private KnifeContactCollider knifeContactCollider;
+
     private KnifeMovement knifeMovement;
 
-    private KnifeAnimator kniveAnimator;
-
     private Collider[] colliders;
+
+    private bool stabbed = false;
+
 
     private void Awake()
     {
         colliders = GetComponents<Collider>();
         knifeMovement = GetComponentInParent<KnifeMovement>();
-        kniveAnimator = GetComponentInParent<KnifeAnimator>();
+        knifeContactCollider.UnstabEvent += Unstab;
     }
 
-    private void Update()
+    private void Unstab()
     {
-        ToggleColliders();
+        stabbed = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(Constants.Stabbable_Tag) == true)
+        if (other.CompareTag(Constants.Stabbable_Tag) == true && stabbed == false)
         {
+            stabbed = true;
             knifeMovement.FreezeMovement();
             SoundManager.Instance.PlayStabSound();
-        }
-    }
-
-    /// <summary>
-    /// We disable the colliders when the blade is spinning,
-    /// to prevent the following scenario from happening:
-    /// The blade was stabbed in an platform,
-    /// when the player flips the knife again, it will immediately get stuck again,
-    /// as the colliders will collide with the platform right away.
-    /// So by disabling the colliders we let the blade jump free, 
-    /// for at least the duration of the flip animation
-    /// </summary>
-    private void ToggleColliders()
-    {
-        foreach (Collider collider in colliders)
-        {
-            collider.enabled = !kniveAnimator.SliceAnimationOnGoing;
         }
     }
 }

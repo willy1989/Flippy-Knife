@@ -7,13 +7,17 @@ ScriptsOnlyBuild:
     - CutKnife
     - Cuttable
     - GamePhaseManager
+    - HitBonusBlock
     - InputManager
+    - KnifeContactCollider
     - KnifeDeath
     - KnifeMovement
+    - KniveTrail
     - LevelBlockPool
     - LevelBlockResetter
     - LevelBlocksData
     - LevelBuilder
+    - PushBack
     - Resettable_LevelBlockElement
     - Resettable_LevelBlockElementChildren
     - ScoreManager
@@ -30,15 +34,20 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineStateDrivenCamera
     - Cinemachine.CinemachineTransposer
     - Cinemachine.CinemachineVirtualCamera
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Advertisements.dll:
-    - UnityEngine.Advertisements.Placeholder
-    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -95,77 +104,85 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 1630}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 1586}
     - Class: 114
-      Script: {instanceID: 2232}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 2304}
+      Script: {instanceID: 1806}
     - Class: 114
-      Script: {instanceID: 2306}
+      Script: {instanceID: 1896}
     - Class: 114
-      Script: {instanceID: 2360}
+      Script: {instanceID: 1988}
     - Class: 114
-      Script: {instanceID: 2418}
+      Script: {instanceID: 2242}
     - Class: 114
-      Script: {instanceID: 2558}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2316}
     - Class: 114
-      Script: {instanceID: 2668}
+      Script: {instanceID: 2370}
+    - Class: 114
+      Script: {instanceID: 2428}
+    - Class: 114
+      Script: {instanceID: 2568}
+    - Class: 114
+      Script: {instanceID: 2630}
+    - Class: 114
+      Script: {instanceID: 2650}
     - Class: 114
       Script: {instanceID: 2680}
     - Class: 114
-      Script: {instanceID: 2754}
-    - Class: 114
       Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 2850}
+      Script: {instanceID: 2848}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 3068}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 3146}
+      Script: {instanceID: 3156}
     - Class: 114
-      Script: {instanceID: 3224}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3292}
+      Script: {instanceID: 3302}
     - Class: 114
-      Script: {instanceID: 3406}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3714}
+      Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 3768}
+      Script: {instanceID: 3726}
     - Class: 114
-      Script: {instanceID: 4022}
+      Script: {instanceID: 3780}
     - Class: 114
-      Script: {instanceID: 4042}
+      Script: {instanceID: 4034}
     - Class: 114
-      Script: {instanceID: 4162}
+      Script: {instanceID: 4054}
     - Class: 114
-      Script: {instanceID: 4274}
+      Script: {instanceID: 4174}
+    - Class: 114
+      Script: {instanceID: 4286}
     - Class: 114
       Script: {instanceID: 4478}
     - Class: 114
-      Script: {instanceID: 4622}
+      Script: {instanceID: 4492}
     - Class: 114
-      Script: {instanceID: 4708}
+      Script: {instanceID: 4636}
     - Class: 114
-      Script: {instanceID: 4854}
+      Script: {instanceID: 4722}
     - Class: 114
-      Script: {instanceID: 4890}
+      Script: {instanceID: 4868}
     - Class: 114
-      Script: {instanceID: 4908}
+      Script: {instanceID: 4904}
     - Class: 114
-      Script: {instanceID: 30992}
+      Script: {instanceID: 4922}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -197,6 +214,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a1aa98c78061c6f03a8c124cda576e67
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -265,6 +294,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KnifeContactCollider
+  - hash:
+      serializedVersion: 2
       Hash: f24c4c994f99c3f136c292096f97d3a2
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -311,6 +346,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineCameraOffset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HitBonusBlock
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -403,6 +444,12 @@ ScriptsOnlyBuild:
     className: CameraManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelBlockResetter
+  - hash:
+      serializedVersion: 2
       Hash: 62824bb9557c7e987502f2fbd2a26819
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -419,12 +466,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShopItem
-  - hash:
-      serializedVersion: 2
-      Hash: a1aa98c78061c6f03a8c124cda576e67
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: df21ffd1864551a3e43410f28754a73e
@@ -481,7 +522,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: bf16a52106c9a907e556148fa4a62fe5
+      Hash: d708b35a2fa0019b5baa3d03300d1f58
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SoundManager
@@ -523,6 +564,12 @@ ScriptsOnlyBuild:
     className: CinemachinePipeline
   - hash:
       serializedVersion: 2
+      Hash: 1f3520f1942b53bc61c2af90b42680f4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KnifeAnimator
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -539,12 +586,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -691,6 +732,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 99abadb4d4784470a4c9c4b9e3b35b42
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PushBack
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -799,7 +846,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: ab0e91d081cb6dd7d07ed0137a1f2d55
+      Hash: 2b9c36e912b9eb40f117a0430f74fd4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: KnifeMovement
@@ -835,7 +882,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: b7d5aa9ca6ea5707502c66107bea0050
+      Hash: a66d1b4bfc65310fcc4a4d27b26def35
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CutKnife
@@ -887,6 +934,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 52ac3a6b03a23e2503ad0d8e2f87b82d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KniveTrail
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1003,7 +1056,7 @@ ScriptsOnlyBuild:
     className: Shop
   - hash:
       serializedVersion: 2
-      Hash: dcdb1953b87c25363a3b035c9b92a7f4
+      Hash: 4bc1e7769321691cfb8ee501e1c783e9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StabKnife
@@ -1085,14 +1138,7 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBlendListCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LevelBlockResetter
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/willy/Documents/unity/Flippy Knife - Willy Mercier/Flippy
-    knife.apk
+  playerPath: C:/Users/willy/Documents/unity/Flippy Knife - Willy Mercier/ProductionBuild.aab

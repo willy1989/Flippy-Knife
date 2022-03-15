@@ -8,6 +8,7 @@ public class SoundManager : Singleton<SoundManager>
     [SerializeField] private AudioSource loseSound;
     [SerializeField] private AudioSource cutSound;
     [SerializeField] private AudioSource stabSound;
+    [SerializeField] private AudioSource pushBackSound;
 
     private void Awake()
     {
@@ -31,5 +32,10 @@ public class SoundManager : Singleton<SoundManager>
     public void PlayStabSound()
     {
         stabSound.Play();
+    }
+
+    public void PlayPushBackSound()
+    {
+        pushBackSound.Play();
     }
 }

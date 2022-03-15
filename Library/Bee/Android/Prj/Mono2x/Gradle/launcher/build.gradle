@@ -16,7 +16,7 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 30
-        applicationId 'com.DefaultCompany.FlippyKnife'
+        applicationId 'com.WillyMercier.XtremKnife'
         ndk {
             abiFilters 'armeabi-v7a'
         }
