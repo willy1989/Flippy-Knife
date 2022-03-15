@@ -239,7 +239,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleSystem: {fileID: 1668440008254250861}
-  CutInARow: 0
 --- !u!65 &2841620610471796075
 BoxCollider:
   m_ObjectHideFlags: 0

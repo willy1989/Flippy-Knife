@@ -58,11 +58,6 @@ public class KnifeMovement : MonoBehaviour
         if (movementAllowed == false)
             return;
 
-        if (cutKnife.CutInARow == true)
-        {
-            return;
-        }  
-
         if (pushBackReady == true)
         {
             PushBack();

@@ -9,10 +9,10 @@ ScriptsOnlyBuild:
     - GamePhaseManager
     - HitBonusBlock
     - InputManager
-    - KnifeAnimator
     - KnifeContactCollider
     - KnifeDeath
     - KnifeMovement
+    - KniveTrail
     - LevelBlockPool
     - LevelBlockResetter
     - LevelBlocksData
@@ -41,18 +41,13 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Advertisements.dll:
-    - UnityEngine.Advertisements.Placeholder
-    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -153,8 +148,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 2958}
-    - Class: 114
       Script: {instanceID: 3156}
     - Class: 114
       Script: {instanceID: 3234}
@@ -177,17 +170,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4286}
     - Class: 114
-      Script: {instanceID: 4490}
+      Script: {instanceID: 4478}
     - Class: 114
-      Script: {instanceID: 4634}
+      Script: {instanceID: 4492}
     - Class: 114
-      Script: {instanceID: 4720}
+      Script: {instanceID: 4636}
     - Class: 114
-      Script: {instanceID: 4866}
+      Script: {instanceID: 4722}
     - Class: 114
-      Script: {instanceID: 4902}
+      Script: {instanceID: 4868}
     - Class: 114
-      Script: {instanceID: 4920}
+      Script: {instanceID: 4904}
+    - Class: 114
+      Script: {instanceID: 4922}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -527,7 +522,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: bf16a52106c9a907e556148fa4a62fe5
+      Hash: d708b35a2fa0019b5baa3d03300d1f58
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SoundManager
@@ -737,7 +732,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: dcdb1953b87c25363a3b035c9b92a7f4
+      Hash: 99abadb4d4784470a4c9c4b9e3b35b42
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PushBack
@@ -939,6 +934,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 52ac3a6b03a23e2503ad0d8e2f87b82d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KniveTrail
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f

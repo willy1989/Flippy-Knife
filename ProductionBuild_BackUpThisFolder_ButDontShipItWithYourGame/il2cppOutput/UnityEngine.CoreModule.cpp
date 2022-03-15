@@ -383,6 +383,8 @@ struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 struct Texture2DArray_t5ADB8D23A8AA2F2F3916F43852194B78E579E6BA;
 // UnityEngine.Texture3D
 struct Texture3D_tDC30A0F19B6055086859D1ABC098D6E6762000E1;
+// UnityEngine.TrailRenderer
+struct TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39;
 // System.Type
 struct Type_t;
 // UnityEngineInternal.TypeInferenceRuleAttribute
@@ -14424,6 +14426,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t QualitySettings_get_activeColorSpace_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.TrailRenderer::set_emitting(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrailRenderer_set_emitting_m16F5AF286796F5A3525EC91EAC427D61302A098B (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	typedef void (*TrailRenderer_set_emitting_m16F5AF286796F5A3525EC91EAC427D61302A098B_ftn) (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39*, bool);
+	static TrailRenderer_set_emitting_m16F5AF286796F5A3525EC91EAC427D61302A098B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TrailRenderer_set_emitting_m16F5AF286796F5A3525EC91EAC427D61302A098B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TrailRenderer::set_emitting(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

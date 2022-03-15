@@ -76,6 +76,7 @@ public class GamePhaseManager : Singleton<GamePhaseManager>
         CameraManager.Instance.SwitchToStartCamera();
         hitBonusBlock.Reset();
         adsManager.ShowInterstitialAd();
+        knifeMovement.EnableMovement();
     }
 
     public void StartGame()
@@ -108,7 +109,7 @@ public class GamePhaseManager : Singleton<GamePhaseManager>
 
     public void SpawnNewKnife()
     {
-        currentKnife = Instantiate(KnifePrefab, knifeSpawnPosition.position, Quaternion.identity);
+        currentKnife = Instantiate(KnifePrefab, knifeSpawnPosition.position, Quaternion.Euler(new Vector3(0,0,-180f)));
         kniveFollowCamera.Follow = currentKnife.transform;
         levelEndCamera.Follow = currentKnife.transform;
         knifeMovement = currentKnife.GetComponent<KnifeMovement>();
@@ -116,7 +117,6 @@ public class GamePhaseManager : Singleton<GamePhaseManager>
         stabKnife = currentKnife.GetComponentInChildren<StabKnife>();
         hitBonusBlock = currentKnife.GetComponentInChildren<HitBonusBlock>();
         knifeMovement.SetUpSword();
-        knifeMovement.DisableMovement();
         knifeDeath.DeathEvent += GameOver;
     }
 }

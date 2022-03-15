@@ -865,6 +865,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RaycastHit_set_distance_mD5C9C6A5F7EDFFA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_get_velocity_Injected_mFD6FCA2857D9953AA953DB9AAF26A88CA881171C (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___ret0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rigidbody::set_velocity_Injected(UnityEngine.Vector3&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_velocity_Injected_m41B399E90D6AA49BABD3C178B3183AD3BBB4EAC4 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rigidbody::get_angularVelocity_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_get_angularVelocity_Injected_m1F0D38AD14491E05E18C0E2C043F777FADC588BC (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___ret0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rigidbody::AddForce_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_Injected_m094E54DEA6CEAEA340F053D077CDF0753900F48E (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___force0, int32_t ___mode1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rigidbody::AddForce(UnityEngine.Vector3,UnityEngine.ForceMode)
@@ -2371,6 +2373,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_velocity_mE4031DF1C2C1CCE8
 		return;
 	}
 }
+// UnityEngine.Vector3 UnityEngine.Rigidbody::get_angularVelocity()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Rigidbody_get_angularVelocity_m4EACCFCF15CA441CCD53B24322C2E7B8EEBDF6A8 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Rigidbody_get_angularVelocity_Injected_m1F0D38AD14491E05E18C0E2C043F777FADC588BC(__this, (&V_0), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = V_0;
+		return L_0;
+	}
+}
 // System.Void UnityEngine.Rigidbody::set_angularDrag(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_angularDrag_m4193B04EEFCA831DB99E29E98F778957557F130C (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, float ___value0, const RuntimeMethod* method) 
 {
@@ -2488,6 +2501,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_velocity_Injected_m41B399E
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Rigidbody_set_velocity_Injected_m41B399E90D6AA49BABD3C178B3183AD3BBB4EAC4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::set_velocity_Injected(UnityEngine.Vector3&)");
 	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Rigidbody::get_angularVelocity_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_get_angularVelocity_Injected_m1F0D38AD14491E05E18C0E2C043F777FADC588BC (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___ret0, const RuntimeMethod* method) 
+{
+	typedef void (*Rigidbody_get_angularVelocity_Injected_m1F0D38AD14491E05E18C0E2C043F777FADC588BC_ftn) (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*);
+	static Rigidbody_get_angularVelocity_Injected_m1F0D38AD14491E05E18C0E2C043F777FADC588BC_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_get_angularVelocity_Injected_m1F0D38AD14491E05E18C0E2C043F777FADC588BC_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::get_angularVelocity_Injected(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___ret0);
 }
 // System.Void UnityEngine.Rigidbody::AddForce_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_Injected_m094E54DEA6CEAEA340F053D077CDF0753900F48E (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___force0, int32_t ___mode1, const RuntimeMethod* method) 
