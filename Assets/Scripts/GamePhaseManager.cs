@@ -76,7 +76,6 @@ public class GamePhaseManager : Singleton<GamePhaseManager>
         CameraManager.Instance.SwitchToStartCamera();
         hitBonusBlock.Reset();
         adsManager.ShowInterstitialAd();
-        knifeMovement.EnableMovement();
     }
 
     public void StartGame()
